@@ -82,6 +82,18 @@ Category
 
 <RouteEn author="elxy" example="/bitmovin/blog" path="/bitmovin/blog"/>
 
+## CNCF
+
+### Category
+
+<RouteEn author="Fatpandac" example="/cncf" path="/cncf/:cate?" radar="1" rssbud="1" :paramsDesc="['blog by default']">
+
+| Blog | News | Announcements | Reports |
+|------|------|---------------|---------|
+| blog | news | announcements | reports |
+
+</RouteEn>
+
 ## Codeforces
 
 ### Latest contests
@@ -137,7 +149,7 @@ For instance, the `/github/topics/framework/l=php&o=desc&s=stars` route will gen
 
 ### Repo Issues
 
-<RouteEn author="HenryQW AndreyMZ" path="/github/issue/:user/:repo/:state?/:labels?" example="/github/issue/DIYgod/RSSHub/all/bug" :paramsDesc="['GitHub username', 'GitHub repo name', 'the state of the issues. Can be either `open`, `closed`, or `all`. Default: `open`.', 'a list of comma separated label names']" radar="1" rssbud="1"/>
+<RouteEn author="HenryQW AndreyMZ" path="/github/issue/:user/:repo/:state?/:labels?" example="/github/issue/DIYgod/RSSHub/all/RSS%20proposal" :paramsDesc="['GitHub username', 'GitHub repo name', 'the state of the issues. Can be either `open`, `closed`, or `all`. Default: `open`.', 'a list of comma separated label names']" radar="1" rssbud="1"/>
 
 ### Repo Pull Requests
 
@@ -293,6 +305,10 @@ Subscribe to the updates (threads and submission) from a paritcular Hacker News 
 
 <RouteEn author="NathanDai" example="/leetcode/submission/us/nathandai" path="/leetcode/submission/:country/:user" :paramsDesc="['country, Chines(cn) and US(us)', 'Username, available at the URL of the LeetCode user homepage']"/>
 
+### Daily Question
+
+<RouteEn author="NavePnow" example="/leetcode/dailyquestion/en" path="/leetcode/dailyquestion/en"/>
+
 ## Linux Patchwork
 
 ### Patch Comments
@@ -320,6 +336,17 @@ Subscribe to the updates (threads and submission) from a paritcular Hacker News 
 | Slackware        | `Slackware`        |
 | SUSE             | `SUSE`             |
 | Ubuntu           | `Ubuntu`           |
+
+</RouteEn>
+
+## MySQL
+
+### Release Notes
+
+<RouteEn author="nczitzk" example="/mysql/release/8.0" path="/mysql/release/:version?" :paramsDesc="['Version, see below, 8.0 by default']">
+
+| 8.0 | 5.7 | 5.6 |
+| --- | --- | --- |
 
 </RouteEn>
 

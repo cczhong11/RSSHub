@@ -21,11 +21,11 @@ sidebar: auto
 
 ### 添加脚本路由
 
-在 [/lib/router.js](https://github.com/DIYgod/RSSHub/blob/master/lib/router.js) 里添加路由
+在 [/lib/v2/](https://github.com/DIYgod/RSSHub/tree/master/lib/v2) 中创建对应路由路径，并在 `/lib/v2/:path/router.js` 中添加路由
 
 ### 编写脚本
 
-在 [/lib/routes/](https://github.com/DIYgod/RSSHub/tree/master/lib/routes) 中的路由对应路径下创建新的 js 脚本：
+在 [/lib/v2/](https://github.com/DIYgod/RSSHub/tree/master/lib/v2) 中的路由对应路径下创建新的 js 脚本：
 
 #### 获取源数据
 
@@ -394,6 +394,22 @@ ctx.state.data = {
 };
 ```
 
+##### 互动
+
+**额外**添加这些字段能使你的 RSS 被支持的软件订阅：
+
+```js
+ctx.state.data = {
+    item: [
+        {
+            upvotes: 0, // 默认为空，文章有多少 upvote
+            downvotes: 0, // 默认为空，文章有多少 downvote
+            comments: 0, // 默认为空，文章有多少评论
+        },
+    ],
+};
+```
+
 * * *
 
 ### 添加脚本文档
@@ -408,7 +424,7 @@ ctx.state.data = {
             1.  参数说明必须对应其在路径中出现的顺序
             2.  如缺少说明将会导致`npm run docs:dev`报错
             3.  说明中的 `'` `"` 必须通过反斜杠转义 `\'` `\"`
-            4.  不必在说明中标注`可选 / 必选`，组件会根据路由`?`自动判断
+            4.  路由参数以 `?`、`*`、`+`、普通字符结尾分别表示 “可选”、“零个或多个”、“单个或多个”、“必选”，由组件自动判断，不必在说明中标注
     -   文档样例：
 
         1.  无参数:
@@ -477,7 +493,7 @@ ctx.state.data = {
 
 ### 编写规则
 
-在 [/assets/radar-rules.js](https://github.com/DIYgod/RSSHub/blob/master/assets/radar-rules.js) 里添加规则
+在 [/lib/v2/](https://github.com/DIYgod/RSSHub/tree/master/lib/v2) 的对应路由下创建 `radar.js` 并添加规则
 
 下面说明中会用到的简化的规则：
 
