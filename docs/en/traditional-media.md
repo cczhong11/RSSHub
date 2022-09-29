@@ -160,6 +160,30 @@ Generates full-text feeds that the official feed doesn't provide.
 
 </RouteEn>
 
+## CNBC
+
+### Full article RSS
+
+<RouteEn author="TonyRL" example="/cnbc/rss" path="/cnbc/rss/:id?" :paramsDesc="['Channel ID, can be found in Official RSS URL, `100003114` (Top News) by default']">
+
+Provides a better reading experience (full articles) over the official ones.
+
+Support all channels, refer to [CNBC RSS feeds](https://www.cnbc.com/rss-feeds/).
+
+</RouteEn>
+
+## Deutsche Welle
+
+### News
+
+<RouteEn author="nczitzk" example="/dw/en" path="/dw/:lang?/:caty?" :paramsDesc="['Language, can be found in the URL of the corresponding language version page, German by default', 'Category, all by default']">
+
+| All  | German Press | Culture | Economy | Science & Nature |
+| ---- | -------- | -------- | -------- | -------- |
+| all  | press    | cul      | eco      | sci      |
+
+</RouteEn>
+
 ## Financial Times
 
 ### myFT personal RSS
@@ -551,6 +575,18 @@ Provides all of the articles by the specified New York Times author.
 <RouteEn author="oppilate" example="/wsj/en-us/opinion" path="/wsj/:lang/:category?" :paramsDesc="['Language, `en-us`, `zh-cn`, `zh-tw` are supported', 'Category, only supported in `en-us`. Supports `opinion`, `world_news`, `us_bussiness`, `market_news`, `technology`, `lifestyle`.']">
 
 Provide full article RSS for WSJ topics.
+
+</RouteEn>
+
+## Voice of Mongolia
+
+### News
+
+<RouteEn author="zphw" example="/vom/featured" path="/vom/featured/:lang?" :paramsDesc="['Language, see the table below, `mn` by default']">
+
+| English | 日本語 | Монгол | Русский | 简体中文 |
+| ------- | --- | ------ | ------- | ---- |
+| en      | ja  | mn     | ru      | zh   |
 
 </RouteEn>
 
