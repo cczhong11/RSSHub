@@ -105,6 +105,16 @@
       }
     ]
   },
+  "2cycd.com": {
+    "_name": "二次元虫洞",
+    ".": [
+      {
+        "title": "板块",
+        "docs": "https://docs.rsshub.app/bbs.html#er-ci-yuan-chong-dong",
+        "source": "/:path"
+      }
+    ]
+  },
   "35photo.pro": {
     "_name": "35PHOTO",
     ".": [
@@ -448,6 +458,15 @@
           "/"
         ],
         "target": "/8world/:category?"
+      },
+      {
+        "title": "标签",
+        "docs": "https://docs.rsshub.app/new-media.html#_8-shi-jie-biao-qian",
+        "source": [
+          "/topic/:id",
+          "/"
+        ],
+        "target": "/8world/topic/:id"
       }
     ]
   },
@@ -455,12 +474,19 @@
     "_name": "91porn",
     ".": [
       {
-        "title": "91porn",
+        "title": "今日排行",
         "docs": "https://docs.rsshub.app/multimedia.html#_91porn",
         "source": [
           "/index.php"
         ],
         "target": "/91porn"
+      },
+      {
+        "title": "作者",
+        "docs": "https://docs.rsshub.app/multimedia.html#_91porn",
+        "source": [
+          "/uvideos.php"
+        ]
       }
     ]
   },
@@ -632,6 +658,28 @@
       }
     ]
   },
+  "agemys.cc": {
+    "_name": "AGE动漫",
+    ".": [
+      {
+        "title": "最近更新",
+        "docs": "https://docs.rsshub.app/anime.html#age-dong-man",
+        "source": [
+          "/update",
+          "/"
+        ],
+        "target": "/agefans/update"
+      },
+      {
+        "title": "番剧详情",
+        "docs": "https://docs.rsshub.app/anime.html#age-dong-man",
+        "source": [
+          "/detail/:id"
+        ],
+        "target": "/agefans/detail/:id"
+      }
+    ]
+  },
   "aotter.net": {
     "_name": "電獺少女",
     "agirls": [
@@ -684,6 +732,44 @@
         "docs": "https://docs.rsshub.app/university.html#an-hui-jian-zhu-da-xue",
         "source": "/20/list.htm",
         "target": "/ahjzu/news"
+      }
+    ]
+  },
+  "aicaijing.com": {
+    "_name": "AI 财经社",
+    "www": [
+      {
+        "title": "最新文章",
+        "docs": "https://docs.rsshub.app/finance.html#ai-cai-jing-she-zui-xin-wen-zhang",
+        "source": [
+          "/"
+        ],
+        "target": "/aicaijing/latest"
+      },
+      {
+        "title": "封面文章",
+        "docs": "https://docs.rsshub.app/finance.html#ai-cai-jing-she-feng-mian-wen-zhang",
+        "source": [
+          "/"
+        ],
+        "target": "/aicaijing/cover"
+      },
+      {
+        "title": "推荐资讯",
+        "docs": "https://docs.rsshub.app/finance.html#ai-cai-jing-she-tui-jian-zi-xun",
+        "source": [
+          "/"
+        ],
+        "target": "/aicaijing/recommend"
+      },
+      {
+        "title": "热点 & 深度",
+        "docs": "https://docs.rsshub.app/finance.html#ai-cai-jing-she-re-dian-shen-du",
+        "source": [
+          "/information/:id",
+          "/"
+        ],
+        "target": "/aicaijing/information/:id?"
       }
     ]
   },
@@ -747,6 +833,20 @@
       }
     ]
   },
+  "aliyundrive.com": {
+    "_name": "阿里云盘",
+    "www": [
+      {
+        "title": "文件列表",
+        "docs": "https://docs.rsshub.app/programming.html#a-li-yun-pan",
+        "source": [
+          "/s/:share_id",
+          "/s/:share_id/folder/:parent_file_id"
+        ],
+        "target": "/aliyundrive/files/:share_id/:parent_file_id?"
+      }
+    ]
+  },
   "allrecode.com": {
     "_name": "重构",
     ".": [
@@ -804,6 +904,19 @@
           "/"
         ],
         "target": "/android/platform-tools-releases"
+      }
+    ]
+  },
+  "anquanke.com": {
+    "_name": "安全客",
+    ".": [
+      {
+        "title": "分类订阅",
+        "docs": "https://docs.rsshub.app/programming.html#an-quan-ke",
+        "source": [
+          "/:category",
+          "/"
+        ]
       }
     ]
   },
@@ -1163,6 +1276,70 @@
       }
     ]
   },
+  "baidu.com": {
+    "_name": "百度",
+    "gushitong": [
+      {
+        "title": "首页指数",
+        "docs": "https://docs.rsshub.app/finance.html#bai-du-gu-shi-tong",
+        "source": [
+          "/"
+        ],
+        "target": "/gushitong/index"
+      }
+    ],
+    "tieba": [
+      {
+        "title": "帖子列表",
+        "docs": "https://docs.rsshub.app/bbs.html#bai-du-tie-ba",
+        "source": "f"
+      },
+      {
+        "title": "精品帖子",
+        "docs": "https://docs.rsshub.app/bbs.html#bai-du-tie-ba",
+        "source": "f"
+      },
+      {
+        "title": "帖子动态",
+        "docs": "https://docs.rsshub.app/bbs.html#bai-du-tie-ba",
+        "source": "/p/:id",
+        "target": "/tieba/post/:id"
+      },
+      {
+        "title": "只看楼主",
+        "docs": "https://docs.rsshub.app/bbs.html#bai-du-tie-ba",
+        "source": "/p/:id",
+        "target": "/tieba/post/lz/:id"
+      },
+      {
+        "title": "用户帖子",
+        "docs": "https://docs.rsshub.app/bbs.html#tie-ba",
+        "source": "/home/main"
+      }
+    ]
+  },
+  "baijingapp.com": {
+    "_name": "白鲸出海",
+    ".": [
+      {
+        "title": "最新",
+        "docs": "https://docs.rsshub.app/new-media.html#bai-jing-chu-hai",
+        "source": [
+          "/article",
+          "/"
+        ],
+        "target": "/baijing"
+      },
+      {
+        "title": "资讯",
+        "docs": "https://docs.rsshub.app/new-media.html#bai-jing-chu-hai",
+        "source": [
+          "/article",
+          "/"
+        ]
+      }
+    ]
+  },
   "bandcamp.com": {
     "_name": "Bandcamp",
     ".": [
@@ -1189,6 +1366,158 @@
           "/"
         ],
         "target": "/bandcamp/weekly"
+      }
+    ]
+  },
+  "bangumi.moe": {
+    "_name": "萌番組",
+    ".": [
+      {
+        "title": "最新",
+        "docs": "https://docs.rsshub.app/anime.html#meng-fan-zu-zui-xin",
+        "source": [
+          "/"
+        ],
+        "target": "/bangumi/moe"
+      },
+      {
+        "title": "标签",
+        "docs": "https://docs.rsshub.app/anime.html#meng-fan-zu-biao-qian",
+        "source": [
+          "/search/index"
+        ],
+        "target": "/bangumi/moe/:tags?"
+      }
+    ]
+  },
+  "bangumi.online": {
+    "_name": "アニメ新番組",
+    ".": [
+      {
+        "title": "當季新番",
+        "docs": "https://docs.rsshub.app/anime.html#アニメ-xin-fan-zu-dang-ji-xin-fan",
+        "source": [
+          "/"
+        ],
+        "target": "/bangumi/online"
+      }
+    ]
+  },
+  "bangumi.tv": {
+    "_name": "Bangumi 番组计划",
+    ".": [
+      {
+        "title": "小组话题",
+        "docs": "https://docs.rsshub.app/anime.html#bangumi",
+        "source": "/group/:id",
+        "target": "/bangumi/tv/group/:id"
+      },
+      {
+        "title": "小组话题的新回复",
+        "docs": "https://docs.rsshub.app/anime.html#bangumi",
+        "source": "/group/topic/:id",
+        "target": "/bangumi/tv/topic/:id"
+      },
+      {
+        "title": "现实人物的新作品",
+        "docs": "https://docs.rsshub.app/anime.html#bangumi",
+        "source": "/person/:id",
+        "target": "/bangumi/tv/person/:id"
+      },
+      {
+        "title": "用户日志",
+        "docs": "https://docs.rsshub.app/anime.html#bangumi",
+        "source": "/user/:id",
+        "target": "/bangumi/tv/user/blog/:id"
+      },
+      {
+        "title": "条目的讨论",
+        "docs": "https://docs.rsshub.app/anime.html#bangumi",
+        "source": "/subject/:id",
+        "target": "/bangumi/tv/subject/:id/topics"
+      },
+      {
+        "title": "条目的评论",
+        "docs": "https://docs.rsshub.app/anime.html#bangumi",
+        "source": "/subject/:id",
+        "target": "/bangumi/tv/subject/:id/blogs"
+      },
+      {
+        "title": "条目的章节",
+        "docs": "https://docs.rsshub.app/anime.html#bangumi",
+        "source": "/subject/:id",
+        "target": "/bangumi/tv/subject/:id"
+      },
+      {
+        "title": "条目的吐槽箱",
+        "docs": "https://docs.rsshub.app/anime.html#bangumi",
+        "source": "/subject/:id",
+        "target": "/bangumi/tv/subject/:id/comments"
+      },
+      {
+        "title": "放送列表",
+        "docs": "https://docs.rsshub.app/anime.html#bangumi",
+        "source": "/calendar",
+        "target": "/bangumi/tv/calendar/today"
+      }
+    ]
+  },
+  "bgm.tv": {
+    "_name": "Bangumi 番组计划",
+    ".": [
+      {
+        "title": "小组话题",
+        "docs": "https://docs.rsshub.app/anime.html#bangumi",
+        "source": "/group/:id",
+        "target": "/bangumi/tv/group/:id"
+      },
+      {
+        "title": "小组话题的新回复",
+        "docs": "https://docs.rsshub.app/anime.html#bangumi",
+        "source": "/group/topic/:id",
+        "target": "/bangumi/tv/topic/:id"
+      },
+      {
+        "title": "现实人物的新作品",
+        "docs": "https://docs.rsshub.app/anime.html#bangumi",
+        "source": "/person/:id",
+        "target": "/bangumi/tv/person/:id"
+      },
+      {
+        "title": "用户日志",
+        "docs": "https://docs.rsshub.app/anime.html#bangumi",
+        "source": "/user/:id",
+        "target": "/bangumi/tv/user/blog/:id"
+      },
+      {
+        "title": "条目的讨论",
+        "docs": "https://docs.rsshub.app/anime.html#bangumi",
+        "source": "/subject/:id",
+        "target": "/bangumi/tv/subject/:id/topics"
+      },
+      {
+        "title": "条目的评论",
+        "docs": "https://docs.rsshub.app/anime.html#bangumi",
+        "source": "/subject/:id",
+        "target": "/bangumi/tv/subject/:id/blogs"
+      },
+      {
+        "title": "条目的章节",
+        "docs": "https://docs.rsshub.app/anime.html#bangumi",
+        "source": "/subject/:id",
+        "target": "/bangumi/tv/subject/:id"
+      },
+      {
+        "title": "条目的吐槽箱",
+        "docs": "https://docs.rsshub.app/anime.html#bangumi",
+        "source": "/subject/:id",
+        "target": "/bangumi/tv/subject/:id/comments"
+      },
+      {
+        "title": "放送列表",
+        "docs": "https://docs.rsshub.app/anime.html#bangumi",
+        "source": "/calendar",
+        "target": "/bangumi/tv/calendar/today"
       }
     ]
   },
@@ -1316,6 +1645,16 @@
         "docs": "https://docs.rsshub.app/social-media.html#bilibili",
         "source": "/:uid",
         "target": "/bilibili/user/video-all/:uid"
+      },
+      {
+        "title": "UP 主频道的合集",
+        "docs": "https://docs.rsshub.app/social-media.html#bilibili",
+        "source": "/:uid/channel/collectiondetail"
+      },
+      {
+        "title": "UP 主频道的视频列表",
+        "docs": "https://docs.rsshub.app/social-media.html#bilibili",
+        "source": "/:uid/channel/seriesdetail"
       },
       {
         "title": "UP 主专栏",
@@ -1721,16 +2060,38 @@
       }
     ]
   },
+  "bluestacks.com": {
+    "_name": "BlueStacks",
+    ".": [
+      {
+        "title": "BlueStacks 5 版本日誌",
+        "docs": "https://docs.rsshub.app/program-update.html#bluestacks",
+        "source": [
+          "/hc/en-us/articles/360056960211-Release-Notes-BlueStacks-5",
+          "/"
+        ],
+        "target": "/bluestacks/release/5"
+      }
+    ]
+  },
   "bnu.edu.cn": {
     "_name": "北京师范大学",
     ".": [
       {
         "title": "经济与工商管理学院",
-        "docs": "https://docs.rsshub.app/universities.html#bei-jing-shi-fan-da-xue-jing-ji-yu-gong-shang-guan-li-xue-yuan",
+        "docs": "https://docs.rsshub.app/university.html#bei-jing-shi-fan-da-xue",
         "source": [
           "/"
         ],
         "target": "/bs/:category?"
+      },
+      {
+        "title": "经济与工商管理学院",
+        "docs": "https://docs.rsshub.app/university.html#bei-jing-shi-fan-da-xue",
+        "source": [
+          "/"
+        ],
+        "target": "/bnu/dwxgb/:category/:type"
       }
     ]
   },
@@ -2206,6 +2567,25 @@
       }
     ]
   },
+  "china.com": {
+    "_name": "中华网",
+    "military": [
+      {
+        "title": "军事新闻",
+        "docs": "https://docs.rsshub.app/new-media.html#zhong-hua-wang",
+        "source": "/news",
+        "target": "/china/news/military"
+      }
+    ],
+    "news": [
+      {
+        "title": "时事新闻",
+        "docs": "https://docs.rsshub.app/new-media.html#zhong-hua-wang",
+        "source": "/:category",
+        "target": "/china/news/:category?"
+      }
+    ]
+  },
   "chinacef.cn": {
     "_name": "首席经济学家论坛",
     ".": [
@@ -2427,6 +2807,28 @@
           "/"
         ],
         "target": "/cn-healthcare/index"
+      }
+    ]
+  },
+  "cnbc.com": {
+    "_name": "CNBC",
+    "search": [
+      {
+        "title": "全文 RSS",
+        "docs": "https://docs.rsshub.app/traditional-media.html#cnbc",
+        "source": [
+          "/rs/search/combinedcms/view.xml"
+        ]
+      }
+    ],
+    "www": [
+      {
+        "title": "全文 RSS",
+        "docs": "https://docs.rsshub.app/traditional-media.html#cnbc",
+        "source": [
+          "/id/:id/device/rss/rss.html"
+        ],
+        "target": "/cnbc/rss/:id"
       }
     ]
   },
@@ -2699,6 +3101,19 @@
       }
     ]
   },
+  "csdn.net": {
+    "_name": "CSDN",
+    "blog": [
+      {
+        "title": "博客",
+        "docs": "https://docs.rsshub.app/blog.html#csdn",
+        "source": [
+          "/:user"
+        ],
+        "target": "/csdn/blog/:user"
+      }
+    ]
+  },
   "csu.edu.cn": {
     "_name": "中南大学",
     "cse": [
@@ -2716,6 +3131,56 @@
         "docs": "https://docs.rsshub.app/university.html#zhong-nan-da-xue",
         "source": [
           "/WebServer/MailBoxNew/MailList_Pub.aspx?tp=:type"
+        ]
+      }
+    ]
+  },
+  "cts.com.tw": {
+    "_name": "華視",
+    "news": [
+      {
+        "title": "新聞",
+        "docs": "https://docs.rsshub.app/traditional-media.html#hua-shi-xin-wen",
+        "source": "/:category/index.html",
+        "target": "/cts/:category"
+      }
+    ]
+  },
+  "cuc.edu.cn": {
+    "_name": "中国传媒大学",
+    "yz": [
+      {
+        "title": "研究生招生网",
+        "docs": "https://docs.rsshub.app/university.html#zhong-guo-chuan-mei-da-xue",
+        "source": "/*",
+        "target": "/"
+      }
+    ]
+  },
+  "cw.com.tw": {
+    "_name": "天下雜誌",
+    ".": [
+      {
+        "title": "最新上線",
+        "docs": "https://docs.rsshub.app/traditional-media.html#tian-xia-za-zhi",
+        "source": [
+          "/today",
+          "/"
+        ],
+        "target": "/cw/today"
+      },
+      {
+        "title": "主頻道",
+        "docs": "https://docs.rsshub.app/traditional-media.html#tian-xia-za-zhi",
+        "source": [
+          "/masterChannel.action"
+        ]
+      },
+      {
+        "title": "子頻道",
+        "docs": "https://docs.rsshub.app/traditional-media.html#tian-xia-za-zhi",
+        "source": [
+          "/subchannel.action"
         ]
       }
     ]
@@ -2790,6 +3255,35 @@
       }
     ]
   },
+  "dcard.tw": {
+    "_name": "Dcard",
+    "www": [
+      {
+        "title": "首頁帖子-最新",
+        "docs": "https://docs.rsshub.app/bbs.html#dcard",
+        "source": "/f",
+        "target": "/dcard/posts/latest"
+      },
+      {
+        "title": "首頁帖子-熱門",
+        "docs": "https://docs.rsshub.app/bbs.html#dcard",
+        "source": "/f",
+        "target": "/dcard/posts/popular"
+      },
+      {
+        "title": "板塊帖子-最新",
+        "docs": "https://docs.rsshub.app/bbs.html#dcard",
+        "source": "/f/:section",
+        "target": "/dcard/:section/latest"
+      },
+      {
+        "title": "板塊帖子-熱門",
+        "docs": "https://docs.rsshub.app/bbs.html#dcard",
+        "source": "/f/:section",
+        "target": "/dcard/:section/popular"
+      }
+    ]
+  },
   "www.ddosi.org": {
     "_name": "🔰雨苁ℒ🔰",
     ".": [
@@ -2808,6 +3302,20 @@
           "/category/:category/"
         ],
         "target": "/ddosi/category/:category"
+      }
+    ]
+  },
+  "deepmind.com": {
+    "_name": "DeepMind",
+    ".": [
+      {
+        "title": "Blog",
+        "docs": "https://docs.rsshub.app/new-media.html#deepmind",
+        "source": [
+          "/blog",
+          "/"
+        ],
+        "target": "/blog"
       }
     ]
   },
@@ -2856,6 +3364,19 @@
           "/news/ddh"
         ],
         "target": "/diandong/ddh/:cate"
+      }
+    ]
+  },
+  "diershoubing.com": {
+    "_name": "二柄 APP",
+    ".": [
+      {
+        "title": "新闻",
+        "docs": "https://docs.rsshub.app/game.html#er-bing-app",
+        "source": [
+          "/"
+        ],
+        "target": "/diershoubing/news"
       }
     ]
   },
@@ -3070,6 +3591,42 @@
         "docs": "https://docs.rsshub.app/live.html#dou-yin-zhi-bo",
         "source": "/:rid",
         "target": "/douyin/live/:rid"
+      }
+    ]
+  },
+  "douyu.com": {
+    "_name": "斗鱼",
+    "www": [
+      {
+        "title": "直播间开播",
+        "docs": "https://docs.rsshub.app/live.html#dou-yu-zhi-bo-zhi-bo-jian-kai-bo",
+        "source": [
+          "/:id",
+          "/"
+        ],
+        "target": "/douyu/room/:id"
+      }
+    ],
+    "yuba": [
+      {
+        "title": "鱼吧帖子",
+        "docs": "https://docs.rsshub.app/bbs.html#dou-yu-yu-ba-tie-zi",
+        "source": [
+          "/group/:id",
+          "/group/newself/:id",
+          "/group/newall/:id",
+          "/"
+        ],
+        "target": "/douyu/group/:id"
+      },
+      {
+        "title": "鱼吧跟帖",
+        "docs": "https://docs.rsshub.app/bbs.html#dou-yu-yu-ba-gen-tie",
+        "source": [
+          "/p/:id",
+          "/"
+        ],
+        "target": "/douyu/post/:id"
       }
     ]
   },
@@ -4015,6 +4572,42 @@
       }
     ]
   },
+  "fantia.jp": {
+    "_name": "Fantia",
+    ".": [
+      {
+        "title": "用户投稿",
+        "docs": "https://docs.rsshub.app/picture.html#fantia",
+        "source": [
+          "/fanclubs/:id"
+        ],
+        "target": "/fantia/user/:id"
+      }
+    ]
+  },
+  "fastbull.cn": {
+    "_name": "法布财经",
+    ".": [
+      {
+        "title": "新闻",
+        "docs": "https://docs.rsshub.app/finance.html#fa-bu-cai-jing-xin-wen",
+        "source": [
+          "/news",
+          "/"
+        ],
+        "target": "/fastbull/news"
+      },
+      {
+        "title": "快讯",
+        "docs": "https://docs.rsshub.app/finance.html#fa-bu-cai-jing-kuai-xun",
+        "source": [
+          "/express-news",
+          "/"
+        ],
+        "target": "/fastbull/express-news"
+      }
+    ]
+  },
   "fda.gov": {
     "_name": "U.S. Food and Drug Administration",
     ".": [
@@ -4025,7 +4618,7 @@
           "/medical-devices/news-events-medical-devices/cdrhnew-news-and-updates",
           "/"
         ],
-        "target": "/fda/cdrh"
+        "target": "/fda/cdrh/:titleOnly"
       }
     ]
   },
@@ -4054,6 +4647,29 @@
           "/"
         ],
         "target": "/filmdeepfocus/:category?"
+      }
+    ]
+  },
+  "finviz.com": {
+    "_name": "finviz",
+    ".": [
+      {
+        "title": "News",
+        "docs": "https://docs.rsshub.app/finance.html#finviz-news",
+        "source": [
+          "/news.ashx",
+          "/"
+        ],
+        "target": "/finviz/:category?"
+      },
+      {
+        "title": "US Stock News",
+        "docs": "https://docs.rsshub.app/finance.html#finviz-mei-gu-gu-piao-xin-wen",
+        "source": [
+          "/quote.ashx",
+          "/"
+        ],
+        "target": "/finviz/news/:category?"
       }
     ]
   },
@@ -4336,6 +4952,45 @@
       }
     ]
   },
+  "gamme.com.tw": {
+    "_name": "卡卡洛普",
+    "news": [
+      {
+        "title": "宅宅新聞 - 分類",
+        "docs": "https://docs.rsshub.app/new-media.html#ka-ka-luo-pu",
+        "source": [
+          "/category/:category",
+          "/"
+        ]
+      },
+      {
+        "title": "宅宅新聞 - 標籤",
+        "docs": "https://docs.rsshub.app/new-media.html#ka-ka-luo-pu",
+        "source": [
+          "/tag/:tag"
+        ],
+        "target": "/gamme/news/tag/:tag"
+      }
+    ],
+    "sexynews": [
+      {
+        "title": "西斯新聞 - 分類",
+        "docs": "https://docs.rsshub.app/new-media.html#ka-ka-luo-pu",
+        "source": [
+          "/category/:category",
+          "/"
+        ]
+      },
+      {
+        "title": "西斯新聞 - 標籤",
+        "docs": "https://docs.rsshub.app/new-media.html#ka-ka-luo-pu",
+        "source": [
+          "/tag/:tag"
+        ],
+        "target": "/gamme/sexynews/tag/:tag"
+      }
+    ]
+  },
   "gaze.run": {
     "_name": "注视影视",
     ".": [
@@ -4381,6 +5036,42 @@
       }
     ]
   },
+  "gelonghui.com": {
+    "_name": "格隆汇",
+    ".": [
+      {
+        "title": "首页",
+        "docs": "https://docs.rsshub.app/finance.html#ge-long-hui",
+        "source": [
+          "/tag/:tag",
+          "/"
+        ]
+      },
+      {
+        "title": "搜索关键字",
+        "docs": "https://docs.rsshub.app/finance.html#ge-long-hui",
+        "source": [
+          "/search"
+        ]
+      },
+      {
+        "title": "主题文章",
+        "docs": "https://docs.rsshub.app/finance.html#ge-long-hui",
+        "source": [
+          "/subject/:id"
+        ],
+        "target": "/gelonghui/subject/:id"
+      },
+      {
+        "title": "用户文章",
+        "docs": "https://docs.rsshub.app/finance.html#ge-long-hui",
+        "source": [
+          "/user/:id"
+        ],
+        "target": "/gelonghui/user/:id"
+      }
+    ]
+  },
   "getdr.com": {
     "_name": "趨勢科技防詐達人",
     ".": [
@@ -4419,6 +5110,17 @@
           "/"
         ],
         "target": "/gf-cn/news/:category?"
+      }
+    ]
+  },
+  "gihyo.jp": {
+    "_name": "gihyo.jp",
+    ".": [
+      {
+        "title": "記事一覧",
+        "docs": "https://docs.rsshub.app/programming.html#gihyo-jp",
+        "source": "/list/group/:id",
+        "target": "/gihyo/list/group/:id"
       }
     ]
   },
@@ -4492,6 +5194,14 @@
           "/"
         ],
         "target": "/gocn"
+      },
+      {
+        "title": "招聘",
+        "docs": "https://docs.rsshub.app/programming.html#GoCN",
+        "source": [
+          "/"
+        ],
+        "target": "/gocn/jobs"
       }
     ]
   },
@@ -4748,6 +5458,115 @@
       }
     ]
   },
+  "ccdi.gov.cn": {
+    "_name": "中央纪委国家监委",
+    "www": [
+      {
+        "title": "要闻",
+        "docs": "https://docs.rsshub.app/government.html#zhong-yang-ji-wei-guo-jia-jian-wei-yao-wen",
+        "source": [
+          "/*"
+        ]
+      }
+    ]
+  },
+  "cmse.gov.cn": {
+    "_name": "中国载人航天",
+    "www": [
+      {
+        "title": "综合新闻",
+        "docs": "https://docs.rsshub.app/government.html#zhong-guo-zai-ren-hang-tian",
+        "source": [
+          "/xwzx/zhxw"
+        ],
+        "target": "/gov/cmse/xwzx/zhxw"
+      },
+      {
+        "title": "研制进展",
+        "docs": "https://docs.rsshub.app/government.html#zhong-guo-zai-ren-hang-tian",
+        "source": [
+          "/xwzx/yzjz"
+        ],
+        "target": "/gov/cmse/xwzx/yzjz"
+      },
+      {
+        "title": "官方公告",
+        "docs": "https://docs.rsshub.app/government.html#zhong-guo-zai-ren-hang-tian",
+        "source": [
+          "/gfgg"
+        ],
+        "target": "/gov/cmse/gfgg"
+      },
+      {
+        "title": "飞行任务",
+        "docs": "https://docs.rsshub.app/government.html#zhong-guo-zai-ren-hang-tian",
+        "source": [
+          "/fxrw"
+        ],
+        "target": "/gov/cmse/fxrw"
+      },
+      {
+        "title": "任务动态",
+        "docs": "https://docs.rsshub.app/government.html#zhong-guo-zai-ren-hang-tian",
+        "source": [
+          "/fxrw/:id/:category"
+        ],
+        "target": "/gov/cmse/fxrw/:id/:category"
+      },
+      {
+        "title": "空间科学",
+        "docs": "https://docs.rsshub.app/government.html#zhong-guo-zai-ren-hang-tian",
+        "source": [
+          "/kjkx/:id"
+        ],
+        "target": "/gov/cmse/kjkx/:id"
+      },
+      {
+        "title": "国际合作",
+        "docs": "https://docs.rsshub.app/government.html#zhong-guo-zai-ren-hang-tian",
+        "source": [
+          "/gjhz"
+        ],
+        "target": "/gov/cmse/gjhz"
+      },
+      {
+        "title": "环球视野",
+        "docs": "https://docs.rsshub.app/government.html#zhong-guo-zai-ren-hang-tian",
+        "source": [
+          "/hqsy/:id"
+        ],
+        "target": "/gov/cmse/hqsy/:id"
+      },
+      {
+        "title": "专题报道",
+        "docs": "https://docs.rsshub.app/government.html#zhong-guo-zai-ren-hang-tian",
+        "source": [
+          "/ztbd/:id"
+        ],
+        "target": "/gov/cmse/ztbd/:id"
+      },
+      {
+        "title": "科普教育",
+        "docs": "https://docs.rsshub.app/government.html#zhong-guo-zai-ren-hang-tian",
+        "source": [
+          "/kpjy/:id"
+        ],
+        "target": "/gov/cmse/kpjy/:id"
+      }
+    ]
+  },
+  "cnnic.net.cn": {
+    "_name": "中国互联网络信息中心",
+    "www": [
+      {
+        "title": "新闻中心",
+        "docs": "https://docs.rsshub.app/government.html#zhong-guo-hu-lian-wang-luo-xin-xi-zhong-xin-xin-wen-zhong-xin",
+        "source": [
+          "/"
+        ]
+      }
+    ]
+  },
   "customs.gov.cn": {
     "_name": "中华人民共和国海关总署",
     "www": [
@@ -4895,6 +5714,18 @@
       }
     ]
   },
+  "mofcom.gov.cn": {
+    "_name": "中华人民共和国商务部",
+    ".": [
+      {
+        "title": "新闻发布",
+        "docs": "https://docs.rsshub.app/government.html#zhong-hua-ren-min-gong-he-guo-shang-wu-bu",
+        "source": [
+          "/article/*"
+        ]
+      }
+    ]
+  },
   "moj.gov.tw": {
     "_name": "台灣法務部廉政署",
     "www.aac": [
@@ -4925,6 +5756,18 @@
       {
         "title": "通用",
         "docs": "https://docs.rsshub.app/government.html#guo-jia-yao-pin-jian-du-guan-li-ju",
+        "source": [
+          "/*path"
+        ]
+      }
+    ]
+  },
+  "nopss.gov.cn": {
+    "_name": "全国哲学社会科学工作办公室",
+    ".": [
+      {
+        "title": "通用",
+        "docs": "https://docs.rsshub.app/government.html#quan-guo-zhe-xue-she-hui-ke-xue-gong-zuo-ban-gong-shi",
         "source": [
           "/*path"
         ]
@@ -5062,6 +5905,18 @@
       }
     ]
   },
+  "stats.gov.cn": {
+    "_name": "国家统计局",
+    "www": [
+      {
+        "title": "统计数据 > 最新发布",
+        "docs": "https://docs.rsshub.app/government.html#guo-jia-tong-ji-ju-tong-ji-shu-ju-zui-xin-fa-bu",
+        "source": [
+          "/*"
+        ]
+      }
+    ]
+  },
   "sz.gov.cn": {
     "_name": "深圳政府在线移动门户",
     "hrss": [
@@ -5074,6 +5929,16 @@
         "target": "/gov/shenzhen/hrss/szksy/:caty/:page?"
       }
     ],
+    "xxgk": [
+      {
+        "title": "深圳市人民政府",
+        "docs": "https://docs.rsshub.app/government.html#guang-dong-sheng-ren-min-zheng-fu-guang-dong-sheng-shen-zhen-shi-ren-min-zheng-fu",
+        "source": [
+          "/cn/xxgk/zfxxgj/:caty"
+        ],
+        "target": "/gov/shenzhen/hrss/szksy/:caty/:page?"
+      }
+    ],
     "zzb": [
       {
         "title": "组工在线公告",
@@ -5082,6 +5947,19 @@
           "/*"
         ],
         "target": "/gov/shenzhen/zzb/:caty/:page?"
+      }
+    ]
+  },
+  "taiyuan.gov.cn": {
+    "_name": "太原市人民政府",
+    "rsj": [
+      {
+        "title": "太原市人力资源和社会保障局政府公开信息",
+        "docs": "https://docs.rsshub.app/government.html#tai-yuan-shi-ren-min-zheng-fu-tai-yuan-shi-ren-li-zi-yuan-he-she-hui-bao-zhang-ju-zheng-fu-gong-kai-xin-xi",
+        "source": [
+          "/*"
+        ],
+        "target": "/taiyuan/rsj/:caty/:page?"
       }
     ]
   },
@@ -5115,6 +5993,32 @@
         "source": [
           "/*"
         ]
+      }
+    ]
+  },
+  "greasyfork.org": {
+    "_name": "Greasy Fork",
+    ".": [
+      {
+        "title": "User scripts",
+        "docs": "https://docs.rsshub.app/program-update.html#greasy-fork",
+        "source": [
+          "/:language",
+          "/:language/scripts/by-site/:domain?"
+        ],
+        "target": "/greasyfork/:language/:domain?"
+      },
+      {
+        "title": "Feedback",
+        "docs": "https://docs.rsshub.app/program-update.html#greasy-fork",
+        "source": "/:language/scripts/:script/feedback",
+        "target": "/greasyfork/scripts/:script/feedback"
+      },
+      {
+        "title": "Version history",
+        "docs": "https://docs.rsshub.app/program-update.html#greasy-fork",
+        "source": "/:language/scripts/:script/versions",
+        "target": "/greasyfork/scripts/:script/versions"
       }
     ]
   },
@@ -5587,6 +6491,47 @@
       }
     ]
   },
+  "hit.edu.cn": {
+    "_name": "哈尔滨工业大学",
+    "jwc": [
+      {
+        "title": "哈尔滨工业大学教务处通知公告",
+        "docs": "https://docs.rsshub.app/university.html#ha-er-bin-gong-ye-da-xue",
+        "source": "/*",
+        "target": "/hit/jwc"
+      }
+    ],
+    "today": [
+      {
+        "title": "今日哈工大",
+        "docs": "https://docs.rsshub.app/university.html#ha-er-bin-gong-ye-da-xue",
+        "source": "/category/:category",
+        "target": "/hit/today/:category"
+      }
+    ],
+    "hitgs": [
+      {
+        "title": "哈工大研究生院通知公告",
+        "docs": "https://docs.rsshub.app/university.html#ha-er-bin-gong-ye-da-xue",
+        "source": "/*",
+        "target": "/hit/hitgs"
+      }
+    ]
+  },
+  "hitwh.edu.cn": {
+    "_name": "哈尔滨工业大学（威海）",
+    ".": [
+      {
+        "title": "今日工大 - 通知公告",
+        "docs": "https://docs.rsshub.app/university.html#ha-er-bin-gong-ye-da-xue-wei-hai",
+        "source": [
+          "/1024/list.htm",
+          "/"
+        ],
+        "target": "/hitwh/today"
+      }
+    ]
+  },
   "hizh.cn": {
     "_name": "珠海网",
     ".": [
@@ -5595,6 +6540,76 @@
         "docs": "https://docs.rsshub.app/new-media.html#zhu-hai-wang-lan-mu",
         "source": "/",
         "target": "/hizu/:column?"
+      }
+    ]
+  },
+  "hjedd.com": {
+    "_name": "海角社区",
+    ".": [
+      {
+        "title": "热门",
+        "docs": "https://docs.rsshub.app/bbs.html#hai-jiao-she-qu-re-men",
+        "source": [
+          "/"
+        ],
+        "target": "/hjedd/hot"
+      },
+      {
+        "title": "新闻",
+        "docs": "https://docs.rsshub.app/bbs.html#hai-jiao-she-qu-xin-wen",
+        "source": [
+          "/"
+        ],
+        "target": "/hjedd/news"
+      },
+      {
+        "title": "大事记",
+        "docs": "https://docs.rsshub.app/bbs.html#hai-jiao-she-qu-da-shi-ji",
+        "source": [
+          "/article",
+          "/"
+        ],
+        "target": "/hjedd/event"
+      },
+      {
+        "title": "原创",
+        "docs": "https://docs.rsshub.app/bbs.html#hai-jiao-she-qu-da-yuan-chuang",
+        "source": [
+          "/"
+        ],
+        "target": "/hjedd/original"
+      },
+      {
+        "title": "精华",
+        "docs": "https://docs.rsshub.app/bbs.html#hai-jiao-she-qu-da-jing-hua",
+        "source": [
+          "/"
+        ],
+        "target": "/hjedd/top"
+      },
+      {
+        "title": "公告",
+        "docs": "https://docs.rsshub.app/bbs.html#hai-jiao-she-qu-da-gong-gao",
+        "source": [
+          "/"
+        ],
+        "target": "/hjedd/notice"
+      },
+      {
+        "title": "最新",
+        "docs": "https://docs.rsshub.app/bbs.html#hai-jiao-she-qu-da-zui-xin",
+        "source": [
+          "/"
+        ],
+        "target": "/hjedd/latest"
+      },
+      {
+        "title": "文章",
+        "docs": "https://docs.rsshub.app/bbs.html#hai-jiao-she-qu-da-wen-zhang",
+        "source": [
+          "/article",
+          "/"
+        ]
       }
     ]
   },
@@ -5971,6 +6986,15 @@
         "target": "/huxiu/article"
       },
       {
+        "title": "24小时",
+        "docs": "https://docs.rsshub.app/new-media.html#hu-xiu",
+        "source": [
+          "/moment",
+          "/"
+        ],
+        "target": "/huxiu/moment"
+      },
+      {
         "title": "标签",
         "docs": "https://docs.rsshub.app/new-media.html#hu-xiu",
         "source": [
@@ -5995,6 +7019,14 @@
         "docs": "https://docs.rsshub.app/new-media.html#hu-xiu",
         "source": [
           "/collection/:id",
+          "/"
+        ]
+      },
+      {
+        "title": "简报",
+        "docs": "https://docs.rsshub.app/new-media.html#hu-xiu",
+        "source": [
+          "/briefColumn/:id",
           "/"
         ]
       }
@@ -6123,6 +7155,20 @@
           "/extras/indybest/gadgets-tech/video-games-consoles/ps5-stock-uk-restock-live-today-b1938965.html"
         ],
         "target": "/ps5-stock-uk"
+      }
+    ]
+  },
+  "indiansinkuwait.com": {
+    "_name": "Indians in Kuwait",
+    ".": [
+      {
+        "title": "News",
+        "docs": "https://docs.rsshub.app/en/new-media.html#indians-in-kuwait",
+        "source": [
+          "/latest-news",
+          "/"
+        ],
+        "target": "/indiansinkuwait/latest"
       }
     ]
   },
@@ -6310,11 +7356,42 @@
     "www": [
       {
         "title": "研究报告",
-        "docs": "https://docs.rsshub.app/journal.html#ieee-xplore",
+        "docs": "https://docs.rsshub.app/other.html#ai-rui-chan-ye-yan-jiu-bao-gao",
         "source": [
           "/report.shtml"
         ],
         "target": "/iresearch/report"
+      },
+      {
+        "title": "周度市场观察",
+        "docs": "https://docs.rsshub.app/other.html#ai-rui-zhou-du-shi-chang-guan-cha",
+        "source": [
+          "/report.shtml?type=3",
+          ""
+        ],
+        "target": "/iresearch/weekly/:category"
+      }
+    ]
+  },
+  "islander.cc": {
+    "_name": "島民衛星 Islander",
+    ".": [
+      {
+        "title": "事件分析",
+        "docs": "https://docs.rsshub.app/new-media.html#dao-min-wei-xing-islander",
+        "source": [
+          "/"
+        ],
+        "target": "/islander/search"
+      },
+      {
+        "title": "單日焦點",
+        "docs": "https://docs.rsshub.app/new-media.html#dao-min-wei-xing-islander",
+        "source": [
+          "/top30event",
+          "/"
+        ],
+        "target": "/islander/top30event"
       }
     ]
   },
@@ -6465,6 +7542,20 @@
       }
     ]
   },
+  "ithome.com.tw": {
+    "_name": "iThome",
+    "www": [
+      {
+        "title": "Feeds",
+        "docs": "https://docs.rsshub.app/new-media.html#ithome-tai-wan",
+        "source": [
+          "/:category",
+          "/:category/feeds"
+        ],
+        "target": "/ithome/tw/feeds/:category"
+      }
+    ]
+  },
   "iwara.tv": {
     "_name": "iwara",
     "ecchi": [
@@ -6479,6 +7570,12 @@
         "docs": "",
         "source": "/users/:username",
         "target": "/iwara/users/:username?/image"
+      },
+      {
+        "title": "用户订阅列表",
+        "docs": "https://docs.rsshub.app/anime.html#iwara",
+        "source": "",
+        "target": "/iwara/subscriptions"
       }
     ]
   },
@@ -6520,64 +7617,88 @@
     "_name": "JavBus",
     "www": [
       {
-        "title": "首页",
+        "title": "有码 - 首页",
         "docs": "https://docs.rsshub.app/multimedia.html#javbus",
         "source": "/",
-        "target": "/javbus/home"
+        "target": "/javbus"
       },
       {
-        "title": "分类",
+        "title": "有码 - 分类",
         "docs": "https://docs.rsshub.app/multimedia.html#javbus",
-        "source": "/genre/:gid",
-        "target": "/javbus/genre/:gid"
+        "source": "/genre/:id",
+        "target": "/javbus/genre/:id"
       },
       {
-        "title": "演员",
+        "title": "有码 - 演员",
         "docs": "https://docs.rsshub.app/multimedia.html#javbus",
-        "source": "/star/:sid",
-        "target": "/javbus/star/:sid"
+        "source": "/star/:id",
+        "target": "/javbus/star/:id"
       },
       {
-        "title": "系列",
+        "title": "有码 - 系列",
         "docs": "https://docs.rsshub.app/multimedia.html#javbus",
-        "source": "/series/:seriesid",
-        "target": "/javbus/series/:seriesid"
+        "source": "/series/:id",
+        "target": "/javbus/series/:id"
       },
       {
-        "title": "制作商",
+        "title": "有码 - 制作商",
         "docs": "https://docs.rsshub.app/multimedia.html#javbus",
-        "source": "/studio/:studioid",
-        "target": "/javbus/studio/:studioid"
+        "source": "/studio/:id",
+        "target": "/javbus/studio/:id"
       },
       {
-        "title": "发行商",
+        "title": "有码 - 发行商",
         "docs": "https://docs.rsshub.app/multimedia.html#javbus",
-        "source": "/label/:labelid",
-        "target": "/javbus/label/:labelid"
+        "source": "/label/:id",
+        "target": "/javbus/label/:id"
       },
       {
-        "title": "首页 / 步兵",
+        "title": "有码 - 导演",
+        "docs": "https://docs.rsshub.app/multimedia.html#javbus",
+        "source": "/director/:id",
+        "target": "/javbus/director/:id"
+      },
+      {
+        "title": "有码 - 搜索",
+        "docs": "https://docs.rsshub.app/multimedia.html#javbus",
+        "source": "/search/:keyword",
+        "target": "/javbus/search/:keyword"
+      },
+      {
+        "title": "无码 - 首页",
         "docs": "https://docs.rsshub.app/multimedia.html#javbus",
         "source": "/uncensored",
-        "target": "/javbus/uncensored/home"
+        "target": "/javbus/uncensored"
       },
       {
-        "title": "分类 / 步兵",
+        "title": "无码 - 分类",
         "docs": "https://docs.rsshub.app/multimedia.html#javbus",
-        "source": "/uncensored/genre/:gid",
-        "target": "/javbus/uncensored/genre/:gid"
+        "source": "/uncensored/genre/:id",
+        "target": "/javbus/uncensored/genre/:id"
       },
       {
-        "title": "演员 / 步兵",
+        "title": "无码 - 演员",
         "docs": "https://docs.rsshub.app/multimedia.html#javbus",
-        "source": "/uncensored/star/:sid",
-        "target": "/javbus/uncensored/star/:sid"
+        "source": "/uncensored/star/:id",
+        "target": "/javbus/uncensored/star/:id"
       },
       {
-        "title": "系列 / 步兵",
+        "title": "无码 - 系列",
         "docs": "https://docs.rsshub.app/multimedia.html#javbus",
-        "source": "/uncensored/series/:seriesid",
-        "target": "/javbus/uncensored/series/:seriesid"
+        "source": "/uncensored/series/:id",
+        "target": "/javbus/uncensored/series/:id"
+      },
+      {
+        "title": "无码 - 制作商",
+        "docs": "https://docs.rsshub.app/multimedia.html#javbus",
+        "source": "/uncensored/studio/:id",
+        "target": "/javbus/uncensored/studio/:id"
+      },
+      {
+        "title": "无码 - 搜索",
+        "docs": "https://docs.rsshub.app/multimedia.html#javbus",
+        "source": "/uncensored/search/:keyword",
+        "target": "/javbus/uncensored/search/:keyword"
       }
     ]
   },
@@ -6585,64 +7706,88 @@
     "_name": "JavBus",
     "www": [
       {
-        "title": "首页",
+        "title": "有码 - 首页",
         "docs": "https://docs.rsshub.app/multimedia.html#javbus",
         "source": "/",
-        "target": "/javbus/home"
+        "target": "/javbus"
       },
       {
-        "title": "分类",
+        "title": "有码 - 分类",
         "docs": "https://docs.rsshub.app/multimedia.html#javbus",
-        "source": "/genre/:gid",
-        "target": "/javbus/genre/:gid"
+        "source": "/genre/:id",
+        "target": "/javbus/genre/:id"
       },
       {
-        "title": "演员",
+        "title": "有码 - 演员",
         "docs": "https://docs.rsshub.app/multimedia.html#javbus",
-        "source": "/star/:sid",
-        "target": "/javbus/star/:sid"
+        "source": "/star/:id",
+        "target": "/javbus/star/:id"
       },
       {
-        "title": "系列",
+        "title": "有码 - 系列",
         "docs": "https://docs.rsshub.app/multimedia.html#javbus",
-        "source": "/series/:seriesid",
-        "target": "/javbus/series/:seriesid"
+        "source": "/series/:id",
+        "target": "/javbus/series/:id"
       },
       {
-        "title": "制作商",
+        "title": "有码 - 制作商",
         "docs": "https://docs.rsshub.app/multimedia.html#javbus",
-        "source": "/studio/:studioid",
-        "target": "/javbus/studio/:studioid"
+        "source": "/studio/:id",
+        "target": "/javbus/studio/:id"
       },
       {
-        "title": "发行商",
+        "title": "有码 - 发行商",
         "docs": "https://docs.rsshub.app/multimedia.html#javbus",
-        "source": "/label/:labelid",
-        "target": "/javbus/label/:labelid"
+        "source": "/label/:id",
+        "target": "/javbus/label/:id"
       },
       {
-        "title": "首页 / 步兵",
+        "title": "有码 - 导演",
+        "docs": "https://docs.rsshub.app/multimedia.html#javbus",
+        "source": "/director/:id",
+        "target": "/javbus/director/:id"
+      },
+      {
+        "title": "有码 - 搜索",
+        "docs": "https://docs.rsshub.app/multimedia.html#javbus",
+        "source": "/search/:keyword",
+        "target": "/javbus/search/:keyword"
+      },
+      {
+        "title": "无码 - 首页",
         "docs": "https://docs.rsshub.app/multimedia.html#javbus",
         "source": "/uncensored",
-        "target": "/javbus/uncensored/home"
+        "target": "/javbus/uncensored"
       },
       {
-        "title": "分类 / 步兵",
+        "title": "无码 - 分类",
         "docs": "https://docs.rsshub.app/multimedia.html#javbus",
-        "source": "/uncensored/genre/:gid",
-        "target": "/javbus/uncensored/genre/:gid"
+        "source": "/uncensored/genre/:id",
+        "target": "/javbus/uncensored/genre/:id"
       },
       {
-        "title": "演员 / 步兵",
+        "title": "无码 - 演员",
         "docs": "https://docs.rsshub.app/multimedia.html#javbus",
-        "source": "/uncensored/star/:sid",
-        "target": "/javbus/uncensored/star/:sid"
+        "source": "/uncensored/star/:id",
+        "target": "/javbus/uncensored/star/:id"
       },
       {
-        "title": "系列 / 步兵",
+        "title": "无码 - 系列",
         "docs": "https://docs.rsshub.app/multimedia.html#javbus",
-        "source": "/uncensored/series/:seriesid",
-        "target": "/javbus/uncensored/series/:seriesid"
+        "source": "/uncensored/series/:id",
+        "target": "/javbus/uncensored/series/:id"
+      },
+      {
+        "title": "无码 - 制作商",
+        "docs": "https://docs.rsshub.app/multimedia.html#javbus",
+        "source": "/uncensored/studio/:id",
+        "target": "/javbus/uncensored/studio/:id"
+      },
+      {
+        "title": "无码 - 搜索",
+        "docs": "https://docs.rsshub.app/multimedia.html#javbus",
+        "source": "/uncensored/search/:keyword",
+        "target": "/javbus/uncensored/search/:keyword"
       }
     ]
   },
@@ -6650,64 +7795,88 @@
     "_name": "JavBus",
     "www": [
       {
-        "title": "首页",
+        "title": "有码 - 首页",
         "docs": "https://docs.rsshub.app/multimedia.html#javbus",
         "source": "/",
-        "target": "/javbus/home"
+        "target": "/javbus"
       },
       {
-        "title": "分类",
+        "title": "有码 - 分类",
         "docs": "https://docs.rsshub.app/multimedia.html#javbus",
-        "source": "/genre/:gid",
-        "target": "/javbus/genre/:gid"
+        "source": "/genre/:id",
+        "target": "/javbus/genre/:id"
       },
       {
-        "title": "演员",
+        "title": "有码 - 演员",
         "docs": "https://docs.rsshub.app/multimedia.html#javbus",
-        "source": "/star/:sid",
-        "target": "/javbus/star/:sid"
+        "source": "/star/:id",
+        "target": "/javbus/star/:id"
       },
       {
-        "title": "系列",
+        "title": "有码 - 系列",
         "docs": "https://docs.rsshub.app/multimedia.html#javbus",
-        "source": "/series/:seriesid",
-        "target": "/javbus/series/:seriesid"
+        "source": "/series/:id",
+        "target": "/javbus/series/:id"
       },
       {
-        "title": "制作商",
+        "title": "有码 - 制作商",
         "docs": "https://docs.rsshub.app/multimedia.html#javbus",
-        "source": "/studio/:studioid",
-        "target": "/javbus/studio/:studioid"
+        "source": "/studio/:id",
+        "target": "/javbus/studio/:id"
       },
       {
-        "title": "发行商",
+        "title": "有码 - 发行商",
         "docs": "https://docs.rsshub.app/multimedia.html#javbus",
-        "source": "/label/:labelid",
-        "target": "/javbus/label/:labelid"
+        "source": "/label/:id",
+        "target": "/javbus/label/:id"
       },
       {
-        "title": "首页 / 步兵",
+        "title": "有码 - 导演",
+        "docs": "https://docs.rsshub.app/multimedia.html#javbus",
+        "source": "/director/:id",
+        "target": "/javbus/director/:id"
+      },
+      {
+        "title": "有码 - 搜索",
+        "docs": "https://docs.rsshub.app/multimedia.html#javbus",
+        "source": "/search/:keyword",
+        "target": "/javbus/search/:keyword"
+      },
+      {
+        "title": "无码 - 首页",
         "docs": "https://docs.rsshub.app/multimedia.html#javbus",
         "source": "/uncensored",
-        "target": "/javbus/uncensored/home"
+        "target": "/javbus/uncensored"
       },
       {
-        "title": "分类 / 步兵",
+        "title": "无码 - 分类",
         "docs": "https://docs.rsshub.app/multimedia.html#javbus",
-        "source": "/uncensored/genre/:gid",
-        "target": "/javbus/uncensored/genre/:gid"
+        "source": "/uncensored/genre/:id",
+        "target": "/javbus/uncensored/genre/:id"
       },
       {
-        "title": "演员 / 步兵",
+        "title": "无码 - 演员",
         "docs": "https://docs.rsshub.app/multimedia.html#javbus",
-        "source": "/uncensored/star/:sid",
-        "target": "/javbus/uncensored/star/:sid"
+        "source": "/uncensored/star/:id",
+        "target": "/javbus/uncensored/star/:id"
       },
       {
-        "title": "系列 / 步兵",
+        "title": "无码 - 系列",
         "docs": "https://docs.rsshub.app/multimedia.html#javbus",
-        "source": "/uncensored/series/:seriesid",
-        "target": "/javbus/uncensored/series/:seriesid"
+        "source": "/uncensored/series/:id",
+        "target": "/javbus/uncensored/series/:id"
+      },
+      {
+        "title": "无码 - 制作商",
+        "docs": "https://docs.rsshub.app/multimedia.html#javbus",
+        "source": "/uncensored/studio/:id",
+        "target": "/javbus/uncensored/studio/:id"
+      },
+      {
+        "title": "无码 - 搜索",
+        "docs": "https://docs.rsshub.app/multimedia.html#javbus",
+        "source": "/uncensored/search/:keyword",
+        "target": "/javbus/uncensored/search/:keyword"
       }
     ]
   },
@@ -6715,64 +7884,88 @@
     "_name": "JavBus",
     "www": [
       {
-        "title": "首页",
+        "title": "有码 - 首页",
         "docs": "https://docs.rsshub.app/multimedia.html#javbus",
         "source": "/",
-        "target": "/javbus/home"
+        "target": "/javbus"
       },
       {
-        "title": "分类",
+        "title": "有码 - 分类",
         "docs": "https://docs.rsshub.app/multimedia.html#javbus",
-        "source": "/genre/:gid",
-        "target": "/javbus/genre/:gid"
+        "source": "/genre/:id",
+        "target": "/javbus/genre/:id"
       },
       {
-        "title": "演员",
+        "title": "有码 - 演员",
         "docs": "https://docs.rsshub.app/multimedia.html#javbus",
-        "source": "/star/:sid",
-        "target": "/javbus/star/:sid"
+        "source": "/star/:id",
+        "target": "/javbus/star/:id"
       },
       {
-        "title": "系列",
+        "title": "有码 - 系列",
         "docs": "https://docs.rsshub.app/multimedia.html#javbus",
-        "source": "/series/:seriesid",
-        "target": "/javbus/series/:seriesid"
+        "source": "/series/:id",
+        "target": "/javbus/series/:id"
       },
       {
-        "title": "制作商",
+        "title": "有码 - 制作商",
         "docs": "https://docs.rsshub.app/multimedia.html#javbus",
-        "source": "/studio/:studioid",
-        "target": "/javbus/studio/:studioid"
+        "source": "/studio/:id",
+        "target": "/javbus/studio/:id"
       },
       {
-        "title": "发行商",
+        "title": "有码 - 发行商",
         "docs": "https://docs.rsshub.app/multimedia.html#javbus",
-        "source": "/label/:labelid",
-        "target": "/javbus/label/:labelid"
+        "source": "/label/:id",
+        "target": "/javbus/label/:id"
       },
       {
-        "title": "首页 / 步兵",
+        "title": "有码 - 导演",
+        "docs": "https://docs.rsshub.app/multimedia.html#javbus",
+        "source": "/director/:id",
+        "target": "/javbus/director/:id"
+      },
+      {
+        "title": "有码 - 搜索",
+        "docs": "https://docs.rsshub.app/multimedia.html#javbus",
+        "source": "/search/:keyword",
+        "target": "/javbus/search/:keyword"
+      },
+      {
+        "title": "无码 - 首页",
         "docs": "https://docs.rsshub.app/multimedia.html#javbus",
         "source": "/uncensored",
-        "target": "/javbus/uncensored/home"
+        "target": "/javbus/uncensored"
       },
       {
-        "title": "分类 / 步兵",
+        "title": "无码 - 分类",
         "docs": "https://docs.rsshub.app/multimedia.html#javbus",
-        "source": "/uncensored/genre/:gid",
-        "target": "/javbus/uncensored/genre/:gid"
+        "source": "/uncensored/genre/:id",
+        "target": "/javbus/uncensored/genre/:id"
       },
       {
-        "title": "演员 / 步兵",
+        "title": "无码 - 演员",
         "docs": "https://docs.rsshub.app/multimedia.html#javbus",
-        "source": "/uncensored/star/:sid",
-        "target": "/javbus/uncensored/star/:sid"
+        "source": "/uncensored/star/:id",
+        "target": "/javbus/uncensored/star/:id"
       },
       {
-        "title": "系列 / 步兵",
+        "title": "无码 - 系列",
         "docs": "https://docs.rsshub.app/multimedia.html#javbus",
-        "source": "/uncensored/series/:seriesid",
-        "target": "/javbus/uncensored/series/:seriesid"
+        "source": "/uncensored/series/:id",
+        "target": "/javbus/uncensored/series/:id"
+      },
+      {
+        "title": "无码 - 制作商",
+        "docs": "https://docs.rsshub.app/multimedia.html#javbus",
+        "source": "/uncensored/studio/:id",
+        "target": "/javbus/uncensored/studio/:id"
+      },
+      {
+        "title": "无码 - 搜索",
+        "docs": "https://docs.rsshub.app/multimedia.html#javbus",
+        "source": "/uncensored/search/:keyword",
+        "target": "/javbus/uncensored/search/:keyword"
       }
     ]
   },
@@ -6780,64 +7973,88 @@
     "_name": "JavBus",
     "www": [
       {
-        "title": "首页",
+        "title": "有码 - 首页",
         "docs": "https://docs.rsshub.app/multimedia.html#javbus",
         "source": "/",
-        "target": "/javbus/home"
+        "target": "/javbus"
       },
       {
-        "title": "分类",
+        "title": "有码 - 分类",
         "docs": "https://docs.rsshub.app/multimedia.html#javbus",
-        "source": "/genre/:gid",
-        "target": "/javbus/genre/:gid"
+        "source": "/genre/:id",
+        "target": "/javbus/genre/:id"
       },
       {
-        "title": "演员",
+        "title": "有码 - 演员",
         "docs": "https://docs.rsshub.app/multimedia.html#javbus",
-        "source": "/star/:sid",
-        "target": "/javbus/star/:sid"
+        "source": "/star/:id",
+        "target": "/javbus/star/:id"
       },
       {
-        "title": "系列",
+        "title": "有码 - 系列",
         "docs": "https://docs.rsshub.app/multimedia.html#javbus",
-        "source": "/series/:seriesid",
-        "target": "/javbus/series/:seriesid"
+        "source": "/series/:id",
+        "target": "/javbus/series/:id"
       },
       {
-        "title": "制作商",
+        "title": "有码 - 制作商",
         "docs": "https://docs.rsshub.app/multimedia.html#javbus",
-        "source": "/studio/:studioid",
-        "target": "/javbus/studio/:studioid"
+        "source": "/studio/:id",
+        "target": "/javbus/studio/:id"
       },
       {
-        "title": "发行商",
+        "title": "有码 - 发行商",
         "docs": "https://docs.rsshub.app/multimedia.html#javbus",
-        "source": "/label/:labelid",
-        "target": "/javbus/label/:labelid"
+        "source": "/label/:id",
+        "target": "/javbus/label/:id"
       },
       {
-        "title": "首页 / 步兵",
+        "title": "有码 - 导演",
+        "docs": "https://docs.rsshub.app/multimedia.html#javbus",
+        "source": "/director/:id",
+        "target": "/javbus/director/:id"
+      },
+      {
+        "title": "有码 - 搜索",
+        "docs": "https://docs.rsshub.app/multimedia.html#javbus",
+        "source": "/search/:keyword",
+        "target": "/javbus/search/:keyword"
+      },
+      {
+        "title": "无码 - 首页",
         "docs": "https://docs.rsshub.app/multimedia.html#javbus",
         "source": "/uncensored",
-        "target": "/javbus/uncensored/home"
+        "target": "/javbus/uncensored"
       },
       {
-        "title": "分类 / 步兵",
+        "title": "无码 - 分类",
         "docs": "https://docs.rsshub.app/multimedia.html#javbus",
-        "source": "/uncensored/genre/:gid",
-        "target": "/javbus/uncensored/genre/:gid"
+        "source": "/uncensored/genre/:id",
+        "target": "/javbus/uncensored/genre/:id"
       },
       {
-        "title": "演员 / 步兵",
+        "title": "无码 - 演员",
         "docs": "https://docs.rsshub.app/multimedia.html#javbus",
-        "source": "/uncensored/star/:sid",
-        "target": "/javbus/uncensored/star/:sid"
+        "source": "/uncensored/star/:id",
+        "target": "/javbus/uncensored/star/:id"
       },
       {
-        "title": "系列 / 步兵",
+        "title": "无码 - 系列",
         "docs": "https://docs.rsshub.app/multimedia.html#javbus",
-        "source": "/uncensored/series/:seriesid",
-        "target": "/javbus/uncensored/series/:seriesid"
+        "source": "/uncensored/series/:id",
+        "target": "/javbus/uncensored/series/:id"
+      },
+      {
+        "title": "无码 - 制作商",
+        "docs": "https://docs.rsshub.app/multimedia.html#javbus",
+        "source": "/uncensored/studio/:id",
+        "target": "/javbus/uncensored/studio/:id"
+      },
+      {
+        "title": "无码 - 搜索",
+        "docs": "https://docs.rsshub.app/multimedia.html#javbus",
+        "source": "/uncensored/search/:keyword",
+        "target": "/javbus/uncensored/search/:keyword"
       }
     ]
   },
@@ -6845,64 +8062,88 @@
     "_name": "JavBus",
     "www": [
       {
-        "title": "首页",
+        "title": "有码 - 首页",
         "docs": "https://docs.rsshub.app/multimedia.html#javbus",
         "source": "/",
-        "target": "/javbus/home"
+        "target": "/javbus"
       },
       {
-        "title": "分类",
+        "title": "有码 - 分类",
         "docs": "https://docs.rsshub.app/multimedia.html#javbus",
-        "source": "/genre/:gid",
-        "target": "/javbus/genre/:gid"
+        "source": "/genre/:id",
+        "target": "/javbus/genre/:id"
       },
       {
-        "title": "演员",
+        "title": "有码 - 演员",
         "docs": "https://docs.rsshub.app/multimedia.html#javbus",
-        "source": "/star/:sid",
-        "target": "/javbus/star/:sid"
+        "source": "/star/:id",
+        "target": "/javbus/star/:id"
       },
       {
-        "title": "系列",
+        "title": "有码 - 系列",
         "docs": "https://docs.rsshub.app/multimedia.html#javbus",
-        "source": "/series/:seriesid",
-        "target": "/javbus/series/:seriesid"
+        "source": "/series/:id",
+        "target": "/javbus/series/:id"
       },
       {
-        "title": "制作商",
+        "title": "有码 - 制作商",
         "docs": "https://docs.rsshub.app/multimedia.html#javbus",
-        "source": "/studio/:studioid",
-        "target": "/javbus/studio/:studioid"
+        "source": "/studio/:id",
+        "target": "/javbus/studio/:id"
       },
       {
-        "title": "发行商",
+        "title": "有码 - 发行商",
         "docs": "https://docs.rsshub.app/multimedia.html#javbus",
-        "source": "/label/:labelid",
-        "target": "/javbus/label/:labelid"
+        "source": "/label/:id",
+        "target": "/javbus/label/:id"
       },
       {
-        "title": "首页 / 步兵",
+        "title": "有码 - 导演",
+        "docs": "https://docs.rsshub.app/multimedia.html#javbus",
+        "source": "/director/:id",
+        "target": "/javbus/director/:id"
+      },
+      {
+        "title": "有码 - 搜索",
+        "docs": "https://docs.rsshub.app/multimedia.html#javbus",
+        "source": "/search/:keyword",
+        "target": "/javbus/search/:keyword"
+      },
+      {
+        "title": "无码 - 首页",
         "docs": "https://docs.rsshub.app/multimedia.html#javbus",
         "source": "/uncensored",
-        "target": "/javbus/uncensored/home"
+        "target": "/javbus/uncensored"
       },
       {
-        "title": "分类 / 步兵",
+        "title": "无码 - 分类",
         "docs": "https://docs.rsshub.app/multimedia.html#javbus",
-        "source": "/uncensored/genre/:gid",
-        "target": "/javbus/uncensored/genre/:gid"
+        "source": "/uncensored/genre/:id",
+        "target": "/javbus/uncensored/genre/:id"
       },
       {
-        "title": "演员 / 步兵",
+        "title": "无码 - 演员",
         "docs": "https://docs.rsshub.app/multimedia.html#javbus",
-        "source": "/uncensored/star/:sid",
-        "target": "/javbus/uncensored/star/:sid"
+        "source": "/uncensored/star/:id",
+        "target": "/javbus/uncensored/star/:id"
       },
       {
-        "title": "系列 / 步兵",
+        "title": "无码 - 系列",
         "docs": "https://docs.rsshub.app/multimedia.html#javbus",
-        "source": "/uncensored/series/:seriesid",
-        "target": "/javbus/uncensored/series/:seriesid"
+        "source": "/uncensored/series/:id",
+        "target": "/javbus/uncensored/series/:id"
+      },
+      {
+        "title": "无码 - 制作商",
+        "docs": "https://docs.rsshub.app/multimedia.html#javbus",
+        "source": "/uncensored/studio/:id",
+        "target": "/javbus/uncensored/studio/:id"
+      },
+      {
+        "title": "无码 - 搜索",
+        "docs": "https://docs.rsshub.app/multimedia.html#javbus",
+        "source": "/uncensored/search/:keyword",
+        "target": "/javbus/uncensored/search/:keyword"
       }
     ]
   },
@@ -6910,64 +8151,88 @@
     "_name": "JavBus",
     "www": [
       {
-        "title": "首页",
+        "title": "有码 - 首页",
         "docs": "https://docs.rsshub.app/multimedia.html#javbus",
         "source": "/",
-        "target": "/javbus/home"
+        "target": "/javbus"
       },
       {
-        "title": "分类",
+        "title": "有码 - 分类",
         "docs": "https://docs.rsshub.app/multimedia.html#javbus",
-        "source": "/genre/:gid",
-        "target": "/javbus/genre/:gid"
+        "source": "/genre/:id",
+        "target": "/javbus/genre/:id"
       },
       {
-        "title": "演员",
+        "title": "有码 - 演员",
         "docs": "https://docs.rsshub.app/multimedia.html#javbus",
-        "source": "/star/:sid",
-        "target": "/javbus/star/:sid"
+        "source": "/star/:id",
+        "target": "/javbus/star/:id"
       },
       {
-        "title": "系列",
+        "title": "有码 - 系列",
         "docs": "https://docs.rsshub.app/multimedia.html#javbus",
-        "source": "/series/:seriesid",
-        "target": "/javbus/series/:seriesid"
+        "source": "/series/:id",
+        "target": "/javbus/series/:id"
       },
       {
-        "title": "制作商",
+        "title": "有码 - 制作商",
         "docs": "https://docs.rsshub.app/multimedia.html#javbus",
-        "source": "/studio/:studioid",
-        "target": "/javbus/studio/:studioid"
+        "source": "/studio/:id",
+        "target": "/javbus/studio/:id"
       },
       {
-        "title": "发行商",
+        "title": "有码 - 发行商",
         "docs": "https://docs.rsshub.app/multimedia.html#javbus",
-        "source": "/label/:labelid",
-        "target": "/javbus/label/:labelid"
+        "source": "/label/:id",
+        "target": "/javbus/label/:id"
       },
       {
-        "title": "首页 / 步兵",
+        "title": "有码 - 导演",
+        "docs": "https://docs.rsshub.app/multimedia.html#javbus",
+        "source": "/director/:id",
+        "target": "/javbus/director/:id"
+      },
+      {
+        "title": "有码 - 搜索",
+        "docs": "https://docs.rsshub.app/multimedia.html#javbus",
+        "source": "/search/:keyword",
+        "target": "/javbus/search/:keyword"
+      },
+      {
+        "title": "无码 - 首页",
         "docs": "https://docs.rsshub.app/multimedia.html#javbus",
         "source": "/uncensored",
-        "target": "/javbus/uncensored/home"
+        "target": "/javbus/uncensored"
       },
       {
-        "title": "分类 / 步兵",
+        "title": "无码 - 分类",
         "docs": "https://docs.rsshub.app/multimedia.html#javbus",
-        "source": "/uncensored/genre/:gid",
-        "target": "/javbus/uncensored/genre/:gid"
+        "source": "/uncensored/genre/:id",
+        "target": "/javbus/uncensored/genre/:id"
       },
       {
-        "title": "演员 / 步兵",
+        "title": "无码 - 演员",
         "docs": "https://docs.rsshub.app/multimedia.html#javbus",
-        "source": "/uncensored/star/:sid",
-        "target": "/javbus/uncensored/star/:sid"
+        "source": "/uncensored/star/:id",
+        "target": "/javbus/uncensored/star/:id"
       },
       {
-        "title": "系列 / 步兵",
+        "title": "无码 - 系列",
         "docs": "https://docs.rsshub.app/multimedia.html#javbus",
-        "source": "/uncensored/series/:seriesid",
-        "target": "/javbus/uncensored/series/:seriesid"
+        "source": "/uncensored/series/:id",
+        "target": "/javbus/uncensored/series/:id"
+      },
+      {
+        "title": "无码 - 制作商",
+        "docs": "https://docs.rsshub.app/multimedia.html#javbus",
+        "source": "/uncensored/studio/:id",
+        "target": "/javbus/uncensored/studio/:id"
+      },
+      {
+        "title": "无码 - 搜索",
+        "docs": "https://docs.rsshub.app/multimedia.html#javbus",
+        "source": "/uncensored/search/:keyword",
+        "target": "/javbus/uncensored/search/:keyword"
       }
     ]
   },
@@ -6975,64 +8240,88 @@
     "_name": "JavBus",
     "www": [
       {
-        "title": "首页",
+        "title": "有码 - 首页",
         "docs": "https://docs.rsshub.app/multimedia.html#javbus",
         "source": "/",
-        "target": "/javbus/home"
+        "target": "/javbus"
       },
       {
-        "title": "分类",
+        "title": "有码 - 分类",
         "docs": "https://docs.rsshub.app/multimedia.html#javbus",
-        "source": "/genre/:gid",
-        "target": "/javbus/genre/:gid"
+        "source": "/genre/:id",
+        "target": "/javbus/genre/:id"
       },
       {
-        "title": "演员",
+        "title": "有码 - 演员",
         "docs": "https://docs.rsshub.app/multimedia.html#javbus",
-        "source": "/star/:sid",
-        "target": "/javbus/star/:sid"
+        "source": "/star/:id",
+        "target": "/javbus/star/:id"
       },
       {
-        "title": "系列",
+        "title": "有码 - 系列",
         "docs": "https://docs.rsshub.app/multimedia.html#javbus",
-        "source": "/series/:seriesid",
-        "target": "/javbus/series/:seriesid"
+        "source": "/series/:id",
+        "target": "/javbus/series/:id"
       },
       {
-        "title": "制作商",
+        "title": "有码 - 制作商",
         "docs": "https://docs.rsshub.app/multimedia.html#javbus",
-        "source": "/studio/:studioid",
-        "target": "/javbus/studio/:studioid"
+        "source": "/studio/:id",
+        "target": "/javbus/studio/:id"
       },
       {
-        "title": "发行商",
+        "title": "有码 - 发行商",
         "docs": "https://docs.rsshub.app/multimedia.html#javbus",
-        "source": "/label/:labelid",
-        "target": "/javbus/label/:labelid"
+        "source": "/label/:id",
+        "target": "/javbus/label/:id"
       },
       {
-        "title": "首页 / 步兵",
+        "title": "有码 - 导演",
+        "docs": "https://docs.rsshub.app/multimedia.html#javbus",
+        "source": "/director/:id",
+        "target": "/javbus/director/:id"
+      },
+      {
+        "title": "有码 - 搜索",
+        "docs": "https://docs.rsshub.app/multimedia.html#javbus",
+        "source": "/search/:keyword",
+        "target": "/javbus/search/:keyword"
+      },
+      {
+        "title": "无码 - 首页",
         "docs": "https://docs.rsshub.app/multimedia.html#javbus",
         "source": "/uncensored",
-        "target": "/javbus/uncensored/home"
+        "target": "/javbus/uncensored"
       },
       {
-        "title": "分类 / 步兵",
+        "title": "无码 - 分类",
         "docs": "https://docs.rsshub.app/multimedia.html#javbus",
-        "source": "/uncensored/genre/:gid",
-        "target": "/javbus/uncensored/genre/:gid"
+        "source": "/uncensored/genre/:id",
+        "target": "/javbus/uncensored/genre/:id"
       },
       {
-        "title": "演员 / 步兵",
+        "title": "无码 - 演员",
         "docs": "https://docs.rsshub.app/multimedia.html#javbus",
-        "source": "/uncensored/star/:sid",
-        "target": "/javbus/uncensored/star/:sid"
+        "source": "/uncensored/star/:id",
+        "target": "/javbus/uncensored/star/:id"
       },
       {
-        "title": "系列 / 步兵",
+        "title": "无码 - 系列",
         "docs": "https://docs.rsshub.app/multimedia.html#javbus",
-        "source": "/uncensored/series/:seriesid",
-        "target": "/javbus/uncensored/series/:seriesid"
+        "source": "/uncensored/series/:id",
+        "target": "/javbus/uncensored/series/:id"
+      },
+      {
+        "title": "无码 - 制作商",
+        "docs": "https://docs.rsshub.app/multimedia.html#javbus",
+        "source": "/uncensored/studio/:id",
+        "target": "/javbus/uncensored/studio/:id"
+      },
+      {
+        "title": "无码 - 搜索",
+        "docs": "https://docs.rsshub.app/multimedia.html#javbus",
+        "source": "/uncensored/search/:keyword",
+        "target": "/javbus/uncensored/search/:keyword"
       }
     ]
   },
@@ -7040,64 +8329,88 @@
     "_name": "JavBus",
     "www": [
       {
-        "title": "首页",
+        "title": "有码 - 首页",
         "docs": "https://docs.rsshub.app/multimedia.html#javbus",
         "source": "/",
-        "target": "/javbus/home"
+        "target": "/javbus"
       },
       {
-        "title": "分类",
+        "title": "有码 - 分类",
         "docs": "https://docs.rsshub.app/multimedia.html#javbus",
-        "source": "/genre/:gid",
-        "target": "/javbus/genre/:gid"
+        "source": "/genre/:id",
+        "target": "/javbus/genre/:id"
       },
       {
-        "title": "演员",
+        "title": "有码 - 演员",
         "docs": "https://docs.rsshub.app/multimedia.html#javbus",
-        "source": "/star/:sid",
-        "target": "/javbus/star/:sid"
+        "source": "/star/:id",
+        "target": "/javbus/star/:id"
       },
       {
-        "title": "系列",
+        "title": "有码 - 系列",
         "docs": "https://docs.rsshub.app/multimedia.html#javbus",
-        "source": "/series/:seriesid",
-        "target": "/javbus/series/:seriesid"
+        "source": "/series/:id",
+        "target": "/javbus/series/:id"
       },
       {
-        "title": "制作商",
+        "title": "有码 - 制作商",
         "docs": "https://docs.rsshub.app/multimedia.html#javbus",
-        "source": "/studio/:studioid",
-        "target": "/javbus/studio/:studioid"
+        "source": "/studio/:id",
+        "target": "/javbus/studio/:id"
       },
       {
-        "title": "发行商",
+        "title": "有码 - 发行商",
         "docs": "https://docs.rsshub.app/multimedia.html#javbus",
-        "source": "/label/:labelid",
-        "target": "/javbus/label/:labelid"
+        "source": "/label/:id",
+        "target": "/javbus/label/:id"
       },
       {
-        "title": "首页 / 步兵",
+        "title": "有码 - 导演",
+        "docs": "https://docs.rsshub.app/multimedia.html#javbus",
+        "source": "/director/:id",
+        "target": "/javbus/director/:id"
+      },
+      {
+        "title": "有码 - 搜索",
+        "docs": "https://docs.rsshub.app/multimedia.html#javbus",
+        "source": "/search/:keyword",
+        "target": "/javbus/search/:keyword"
+      },
+      {
+        "title": "无码 - 首页",
         "docs": "https://docs.rsshub.app/multimedia.html#javbus",
         "source": "/uncensored",
-        "target": "/javbus/uncensored/home"
+        "target": "/javbus/uncensored"
       },
       {
-        "title": "分类 / 步兵",
+        "title": "无码 - 分类",
         "docs": "https://docs.rsshub.app/multimedia.html#javbus",
-        "source": "/uncensored/genre/:gid",
-        "target": "/javbus/uncensored/genre/:gid"
+        "source": "/uncensored/genre/:id",
+        "target": "/javbus/uncensored/genre/:id"
       },
       {
-        "title": "演员 / 步兵",
+        "title": "无码 - 演员",
         "docs": "https://docs.rsshub.app/multimedia.html#javbus",
-        "source": "/uncensored/star/:sid",
-        "target": "/javbus/uncensored/star/:sid"
+        "source": "/uncensored/star/:id",
+        "target": "/javbus/uncensored/star/:id"
       },
       {
-        "title": "系列 / 步兵",
+        "title": "无码 - 系列",
         "docs": "https://docs.rsshub.app/multimedia.html#javbus",
-        "source": "/uncensored/series/:seriesid",
-        "target": "/javbus/uncensored/series/:seriesid"
+        "source": "/uncensored/series/:id",
+        "target": "/javbus/uncensored/series/:id"
+      },
+      {
+        "title": "无码 - 制作商",
+        "docs": "https://docs.rsshub.app/multimedia.html#javbus",
+        "source": "/uncensored/studio/:id",
+        "target": "/javbus/uncensored/studio/:id"
+      },
+      {
+        "title": "无码 - 搜索",
+        "docs": "https://docs.rsshub.app/multimedia.html#javbus",
+        "source": "/uncensored/search/:keyword",
+        "target": "/javbus/uncensored/search/:keyword"
       }
     ]
   },
@@ -7105,64 +8418,88 @@
     "_name": "JavBus",
     "www": [
       {
-        "title": "首页",
+        "title": "有码 - 首页",
         "docs": "https://docs.rsshub.app/multimedia.html#javbus",
         "source": "/",
-        "target": "/javbus/home"
+        "target": "/javbus"
       },
       {
-        "title": "分类",
+        "title": "有码 - 分类",
         "docs": "https://docs.rsshub.app/multimedia.html#javbus",
-        "source": "/genre/:gid",
-        "target": "/javbus/genre/:gid"
+        "source": "/genre/:id",
+        "target": "/javbus/genre/:id"
       },
       {
-        "title": "演员",
+        "title": "有码 - 演员",
         "docs": "https://docs.rsshub.app/multimedia.html#javbus",
-        "source": "/star/:sid",
-        "target": "/javbus/star/:sid"
+        "source": "/star/:id",
+        "target": "/javbus/star/:id"
       },
       {
-        "title": "系列",
+        "title": "有码 - 系列",
         "docs": "https://docs.rsshub.app/multimedia.html#javbus",
-        "source": "/series/:seriesid",
-        "target": "/javbus/series/:seriesid"
+        "source": "/series/:id",
+        "target": "/javbus/series/:id"
       },
       {
-        "title": "制作商",
+        "title": "有码 - 制作商",
         "docs": "https://docs.rsshub.app/multimedia.html#javbus",
-        "source": "/studio/:studioid",
-        "target": "/javbus/studio/:studioid"
+        "source": "/studio/:id",
+        "target": "/javbus/studio/:id"
       },
       {
-        "title": "发行商",
+        "title": "有码 - 发行商",
         "docs": "https://docs.rsshub.app/multimedia.html#javbus",
-        "source": "/label/:labelid",
-        "target": "/javbus/label/:labelid"
+        "source": "/label/:id",
+        "target": "/javbus/label/:id"
       },
       {
-        "title": "首页 / 步兵",
+        "title": "有码 - 导演",
+        "docs": "https://docs.rsshub.app/multimedia.html#javbus",
+        "source": "/director/:id",
+        "target": "/javbus/director/:id"
+      },
+      {
+        "title": "有码 - 搜索",
+        "docs": "https://docs.rsshub.app/multimedia.html#javbus",
+        "source": "/search/:keyword",
+        "target": "/javbus/search/:keyword"
+      },
+      {
+        "title": "无码 - 首页",
         "docs": "https://docs.rsshub.app/multimedia.html#javbus",
         "source": "/uncensored",
-        "target": "/javbus/uncensored/home"
+        "target": "/javbus/uncensored"
       },
       {
-        "title": "分类 / 步兵",
+        "title": "无码 - 分类",
         "docs": "https://docs.rsshub.app/multimedia.html#javbus",
-        "source": "/uncensored/genre/:gid",
-        "target": "/javbus/uncensored/genre/:gid"
+        "source": "/uncensored/genre/:id",
+        "target": "/javbus/uncensored/genre/:id"
       },
       {
-        "title": "演员 / 步兵",
+        "title": "无码 - 演员",
         "docs": "https://docs.rsshub.app/multimedia.html#javbus",
-        "source": "/uncensored/star/:sid",
-        "target": "/javbus/uncensored/star/:sid"
+        "source": "/uncensored/star/:id",
+        "target": "/javbus/uncensored/star/:id"
       },
       {
-        "title": "系列 / 步兵",
+        "title": "无码 - 系列",
         "docs": "https://docs.rsshub.app/multimedia.html#javbus",
-        "source": "/uncensored/series/:seriesid",
-        "target": "/javbus/uncensored/series/:seriesid"
+        "source": "/uncensored/series/:id",
+        "target": "/javbus/uncensored/series/:id"
+      },
+      {
+        "title": "无码 - 制作商",
+        "docs": "https://docs.rsshub.app/multimedia.html#javbus",
+        "source": "/uncensored/studio/:id",
+        "target": "/javbus/uncensored/studio/:id"
+      },
+      {
+        "title": "无码 - 搜索",
+        "docs": "https://docs.rsshub.app/multimedia.html#javbus",
+        "source": "/uncensored/search/:keyword",
+        "target": "/javbus/uncensored/search/:keyword"
       }
     ]
   },
@@ -7170,64 +8507,88 @@
     "_name": "JavBus",
     "www": [
       {
-        "title": "首页",
+        "title": "有码 - 首页",
         "docs": "https://docs.rsshub.app/multimedia.html#javbus",
         "source": "/",
-        "target": "/javbus/home"
+        "target": "/javbus"
       },
       {
-        "title": "分类",
+        "title": "有码 - 分类",
         "docs": "https://docs.rsshub.app/multimedia.html#javbus",
-        "source": "/genre/:gid",
-        "target": "/javbus/genre/:gid"
+        "source": "/genre/:id",
+        "target": "/javbus/genre/:id"
       },
       {
-        "title": "演员",
+        "title": "有码 - 演员",
         "docs": "https://docs.rsshub.app/multimedia.html#javbus",
-        "source": "/star/:sid",
-        "target": "/javbus/star/:sid"
+        "source": "/star/:id",
+        "target": "/javbus/star/:id"
       },
       {
-        "title": "系列",
+        "title": "有码 - 系列",
         "docs": "https://docs.rsshub.app/multimedia.html#javbus",
-        "source": "/series/:seriesid",
-        "target": "/javbus/series/:seriesid"
+        "source": "/series/:id",
+        "target": "/javbus/series/:id"
       },
       {
-        "title": "制作商",
+        "title": "有码 - 制作商",
         "docs": "https://docs.rsshub.app/multimedia.html#javbus",
-        "source": "/studio/:studioid",
-        "target": "/javbus/studio/:studioid"
+        "source": "/studio/:id",
+        "target": "/javbus/studio/:id"
       },
       {
-        "title": "发行商",
+        "title": "有码 - 发行商",
         "docs": "https://docs.rsshub.app/multimedia.html#javbus",
-        "source": "/label/:labelid",
-        "target": "/javbus/label/:labelid"
+        "source": "/label/:id",
+        "target": "/javbus/label/:id"
       },
       {
-        "title": "首页 / 步兵",
+        "title": "有码 - 导演",
+        "docs": "https://docs.rsshub.app/multimedia.html#javbus",
+        "source": "/director/:id",
+        "target": "/javbus/director/:id"
+      },
+      {
+        "title": "有码 - 搜索",
+        "docs": "https://docs.rsshub.app/multimedia.html#javbus",
+        "source": "/search/:keyword",
+        "target": "/javbus/search/:keyword"
+      },
+      {
+        "title": "无码 - 首页",
         "docs": "https://docs.rsshub.app/multimedia.html#javbus",
         "source": "/uncensored",
-        "target": "/javbus/uncensored/home"
+        "target": "/javbus/uncensored"
       },
       {
-        "title": "分类 / 步兵",
+        "title": "无码 - 分类",
         "docs": "https://docs.rsshub.app/multimedia.html#javbus",
-        "source": "/uncensored/genre/:gid",
-        "target": "/javbus/uncensored/genre/:gid"
+        "source": "/uncensored/genre/:id",
+        "target": "/javbus/uncensored/genre/:id"
       },
       {
-        "title": "演员 / 步兵",
+        "title": "无码 - 演员",
         "docs": "https://docs.rsshub.app/multimedia.html#javbus",
-        "source": "/uncensored/star/:sid",
-        "target": "/javbus/uncensored/star/:sid"
+        "source": "/uncensored/star/:id",
+        "target": "/javbus/uncensored/star/:id"
       },
       {
-        "title": "系列 / 步兵",
+        "title": "无码 - 系列",
         "docs": "https://docs.rsshub.app/multimedia.html#javbus",
-        "source": "/uncensored/series/:seriesid",
-        "target": "/javbus/uncensored/series/:seriesid"
+        "source": "/uncensored/series/:id",
+        "target": "/javbus/uncensored/series/:id"
+      },
+      {
+        "title": "无码 - 制作商",
+        "docs": "https://docs.rsshub.app/multimedia.html#javbus",
+        "source": "/uncensored/studio/:id",
+        "target": "/javbus/uncensored/studio/:id"
+      },
+      {
+        "title": "无码 - 搜索",
+        "docs": "https://docs.rsshub.app/multimedia.html#javbus",
+        "source": "/uncensored/search/:keyword",
+        "target": "/javbus/uncensored/search/:keyword"
       }
     ]
   },
@@ -7235,28 +8596,40 @@
     "_name": "JavBus",
     "www": [
       {
-        "title": "首页 / 欧陆风云",
+        "title": "欧美 - 首页",
         "docs": "https://docs.rsshub.app/multimedia.html#javbus",
         "source": "/",
-        "target": "/javbus/western/home"
+        "target": "/javbus/western"
       },
       {
-        "title": "分类 / 欧陆风云",
+        "title": "欧美 - 分类",
         "docs": "https://docs.rsshub.app/multimedia.html#javbus",
-        "source": "/genre/:gid",
-        "target": "/javbus/western/genre/:gid"
+        "source": "/genre/:id",
+        "target": "/javbus/western/genre/:id"
       },
       {
-        "title": "演员 / 欧陆风云",
+        "title": "欧美 - 演员",
         "docs": "https://docs.rsshub.app/multimedia.html#javbus",
-        "source": "/star/:sid",
-        "target": "/javbus/western/star/:sid"
+        "source": "/star/:id",
+        "target": "/javbus/western/star/:id"
       },
       {
-        "title": "系列 / 欧陆风云",
+        "title": "欧美 - 系列",
         "docs": "https://docs.rsshub.app/multimedia.html#javbus",
-        "source": "/series/:seriesid",
-        "target": "/javbus/western/series/:seriesid"
+        "source": "/series/:id",
+        "target": "/javbus/western/series/:id"
+      },
+      {
+        "title": "欧美 - 制作商",
+        "docs": "https://docs.rsshub.app/multimedia.html#javbus",
+        "source": "/studio/:id",
+        "target": "/javbus/western/studio/:id"
+      },
+      {
+        "title": "欧美 - 搜索",
+        "docs": "https://docs.rsshub.app/multimedia.html#javbus",
+        "source": "/search/:keyword",
+        "target": "/javbus/western/search/:keyword"
       }
     ]
   },
@@ -7264,28 +8637,40 @@
     "_name": "JavBus",
     "www": [
       {
-        "title": "首页 / 欧陆风云",
+        "title": "欧美 - 首页",
         "docs": "https://docs.rsshub.app/multimedia.html#javbus",
         "source": "/",
-        "target": "/javbus/western/home"
+        "target": "/javbus/western"
       },
       {
-        "title": "分类 / 欧陆风云",
+        "title": "欧美 - 分类",
         "docs": "https://docs.rsshub.app/multimedia.html#javbus",
-        "source": "/genre/:gid",
-        "target": "/javbus/western/genre/:gid"
+        "source": "/genre/:id",
+        "target": "/javbus/western/genre/:id"
       },
       {
-        "title": "演员 / 欧陆风云",
+        "title": "欧美 - 演员",
         "docs": "https://docs.rsshub.app/multimedia.html#javbus",
-        "source": "/star/:sid",
-        "target": "/javbus/western/star/:sid"
+        "source": "/star/:id",
+        "target": "/javbus/western/star/:id"
       },
       {
-        "title": "系列 / 欧陆风云",
+        "title": "欧美 - 系列",
         "docs": "https://docs.rsshub.app/multimedia.html#javbus",
-        "source": "/series/:seriesid",
-        "target": "/javbus/western/series/:seriesid"
+        "source": "/series/:id",
+        "target": "/javbus/western/series/:id"
+      },
+      {
+        "title": "欧美 - 制作商",
+        "docs": "https://docs.rsshub.app/multimedia.html#javbus",
+        "source": "/studio/:id",
+        "target": "/javbus/western/studio/:id"
+      },
+      {
+        "title": "欧美 - 搜索",
+        "docs": "https://docs.rsshub.app/multimedia.html#javbus",
+        "source": "/search/:keyword",
+        "target": "/javbus/western/search/:keyword"
       }
     ]
   },
@@ -7293,28 +8678,40 @@
     "_name": "JavBus",
     "www": [
       {
-        "title": "首页 / 欧陆风云",
+        "title": "欧美 - 首页",
         "docs": "https://docs.rsshub.app/multimedia.html#javbus",
         "source": "/",
-        "target": "/javbus/western/home"
+        "target": "/javbus/western"
       },
       {
-        "title": "分类 / 欧陆风云",
+        "title": "欧美 - 分类",
         "docs": "https://docs.rsshub.app/multimedia.html#javbus",
-        "source": "/genre/:gid",
-        "target": "/javbus/western/genre/:gid"
+        "source": "/genre/:id",
+        "target": "/javbus/western/genre/:id"
       },
       {
-        "title": "演员 / 欧陆风云",
+        "title": "欧美 - 演员",
         "docs": "https://docs.rsshub.app/multimedia.html#javbus",
-        "source": "/star/:sid",
-        "target": "/javbus/western/star/:sid"
+        "source": "/star/:id",
+        "target": "/javbus/western/star/:id"
       },
       {
-        "title": "系列 / 欧陆风云",
+        "title": "欧美 - 系列",
         "docs": "https://docs.rsshub.app/multimedia.html#javbus",
-        "source": "/series/:seriesid",
-        "target": "/javbus/western/series/:seriesid"
+        "source": "/series/:id",
+        "target": "/javbus/western/series/:id"
+      },
+      {
+        "title": "欧美 - 制作商",
+        "docs": "https://docs.rsshub.app/multimedia.html#javbus",
+        "source": "/studio/:id",
+        "target": "/javbus/western/studio/:id"
+      },
+      {
+        "title": "欧美 - 搜索",
+        "docs": "https://docs.rsshub.app/multimedia.html#javbus",
+        "source": "/search/:keyword",
+        "target": "/javbus/western/search/:keyword"
       }
     ]
   },
@@ -7498,6 +8895,29 @@
       {
         "title": "Exhibitions",
         "docs": "https://docs.rsshub.app/en/travel.html#the-jewish-museum"
+      }
+    ]
+  },
+  "jiemian.com": {
+    "_name": "界面新闻",
+    ".": [
+      {
+        "title": "快报",
+        "docs": "https://docs.rsshub.app/traditional-media.html#jie-mian-xin-wen-kuai-bao",
+        "source": [
+          "/list/:id",
+          "/"
+        ],
+        "target": "/jiemian"
+      },
+      {
+        "title": "栏目",
+        "docs": "https://docs.rsshub.app/traditional-media.html#jie-mian-xin-wen-lan-mu",
+        "source": [
+          "/list/:id",
+          "/"
+        ],
+        "target": "/jiemian/list/:id"
       }
     ]
   },
@@ -7805,6 +9225,29 @@
       }
     ]
   },
+  "kuwaitlocal.com": {
+    "_name": "Kuwait Local",
+    ".": [
+      {
+        "title": "Latest News",
+        "docs": "https://docs.rsshub.app/en/new-media.html#kuwait-local",
+        "source": [
+          "/news/latest",
+          "/news",
+          "/"
+        ],
+        "target": "/kuwaitlocal"
+      },
+      {
+        "title": "Categorised News",
+        "docs": "https://docs.rsshub.app/en/new-media.html#kuwait-local",
+        "source": [
+          "/news/categories/:category"
+        ],
+        "target": "/kuwaitlocal/:category"
+      }
+    ]
+  },
   "kyodonews.net": {
     "_name": "共同网",
     "china": [
@@ -7911,6 +9354,70 @@
       }
     ]
   },
+  "leetcode.com": {
+    "_name": "LeetCode",
+    ".": [
+      {
+        "title": "文章",
+        "docs": "https://docs.rsshub.app/programming.html#leetcode",
+        "source": [
+          "/articles"
+        ],
+        "target": "/leetcode/articles"
+      },
+      {
+        "title": "打卡",
+        "docs": "https://docs.rsshub.app/programming.html#leetcode",
+        "source": [
+          "/:user"
+        ]
+      },
+      {
+        "title": "每日一题",
+        "docs": "https://docs.rsshub.app/programming.html#leetcode",
+        "source": [
+          "/"
+        ],
+        "target": "/leetcode/dailyquestion/en"
+      },
+      {
+        "title": "每日一题题解",
+        "docs": "https://docs.rsshub.app/programming.html#leetcode",
+        "source": [
+          "/"
+        ],
+        "target": "/leetcode/dailyquestion/solution/en"
+      }
+    ]
+  },
+  "leetcode.cn": {
+    "_name": "LeetCode",
+    ".": [
+      {
+        "title": "打卡",
+        "docs": "https://docs.rsshub.app/programming.html#leetcode",
+        "source": [
+          "/:user"
+        ]
+      },
+      {
+        "title": "每日一题",
+        "docs": "https://docs.rsshub.app/programming.html#leetcode",
+        "source": [
+          "/"
+        ],
+        "target": "/leetcode/dailyquestion/cn"
+      },
+      {
+        "title": "每日一题题解",
+        "docs": "https://docs.rsshub.app/programming.html#leetcode",
+        "source": [
+          "/"
+        ],
+        "target": "/leetcode/dailyquestion/solution/cn"
+      }
+    ]
+  },
   "leiphone.com": {
     "_name": "雷峰网",
     ".": [
@@ -7991,6 +9498,19 @@
           "/"
         ],
         "target": "/line/today/:edition?/:tab?"
+      }
+    ]
+  },
+  "linovelib.com": {
+    "_name": "哩哔轻小说",
+    ".": [
+      {
+        "title": "小说详情",
+        "docs": "https://docs.rsshub.app/anime.html#linovelib",
+        "source": [
+          "/novel/:id"
+        ],
+        "target": "/linovellib/novel/:id"
       }
     ]
   },
@@ -8136,6 +9656,41 @@
       }
     ]
   },
+  "garena.tw": {
+    "_name": "Garena",
+    "lol": [
+      {
+        "title": "英雄联盟台服新闻",
+        "docs": "https://docs.rsshub.app/game.html#ying-xiong-lian-meng-tai-fu-xin-wen",
+        "source": [
+          "/news/:category",
+          "/news"
+        ]
+      }
+    ]
+  },
+  "lovelive-anime.jp": {
+    "_name": "Love Live 官网",
+    "www": [
+      {
+        "title": "最新 NEWS",
+        "docs": "https://docs.rsshub.app/anime.html#lovelive-anime-love-live-guan-wang-zui-xin-news",
+        "source": [
+          "/",
+          "/news"
+        ],
+        "target": "/lovelive-anime/news"
+      },
+      {
+        "title": "分类 Topics",
+        "docs": "https://docs.rsshub.app/anime.html#lovelive-anime-love-live-guan-wang-fen-lei-topics",
+        "source": [
+          "/:abbr/topics/",
+          "/:abbr/topics.php"
+        ]
+      }
+    ]
+  },
   "lvv2.com": {
     "_name": "LVV2",
     ".": [
@@ -8206,6 +9761,108 @@
       }
     ]
   },
+  "sonymusic.co.jp": {
+    "_name": "Sony Music",
+    "www": [
+      {
+        "title": "LiSA News",
+        "docs": "https://docs.rsshub.app/en/live.html#lisa",
+        "source": [
+          "/artist/lisa/",
+          "/artist/lisa/info/"
+        ],
+        "target": "/lxixsxa/info"
+      },
+      {
+        "title": "LiSA Albums",
+        "docs": "https://docs.rsshub.app/en/live.html#lisa",
+        "source": [
+          "/artist/lisa/",
+          "/artist/lisa/discography/"
+        ],
+        "target": "/lxixsxa/disco"
+      }
+    ]
+  },
+  "lxixsxa.com": {
+    "_name": "LiSA Official",
+    "www": [
+      {
+        "title": "News",
+        "docs": "https://docs.rsshub.app/en/live.html#lisa",
+        "source": [
+          "/",
+          "/info"
+        ],
+        "target": "/lxixsxa/info"
+      },
+      {
+        "title": "Albums",
+        "docs": "https://docs.rsshub.app/en/live.html#lisa",
+        "source": [
+          "/",
+          "/discography"
+        ],
+        "target": "/lxixsxa/disco"
+      }
+    ]
+  },
+  "macfilos.com": {
+    "_name": "Macfilos",
+    ".": [
+      {
+        "title": "Blog",
+        "docs": "https://docs.rsshub.app/new-media.html#macfilos-blog",
+        "source": [
+          "/blog",
+          "/"
+        ],
+        "target": "/macfilos/blog"
+      }
+    ]
+  },
+  "manhuagui.com": {
+    "_name": "漫画柜",
+    "www": [
+      {
+        "title": "漫画柜个人订阅",
+        "docs": "https://docs.rsshub.app/anime.html#kan-man-hua",
+        "source": "/user/book/shelf",
+        "target": "/manhuagui/subscribe"
+      },
+      {
+        "title": "漫画更新",
+        "docs": "https://docs.rsshub.app/anime.html#kan-man-hua",
+        "source": "/comic/:id/",
+        "target": "/manhuagui/comic/:id"
+      }
+    ],
+    "tw": [
+      {
+        "title": "漫画更新",
+        "docs": "https://docs.rsshub.app/anime.html#kan-man-hua",
+        "source": "/comic/:id/",
+        "target": "/manhuagui/twmanhuagui/comic/:id"
+      }
+    ]
+  },
+  "mhgui.com": {
+    "_name": "漫画柜镜像站",
+    "www": [
+      {
+        "title": "漫画柜个人订阅",
+        "docs": "https://docs.rsshub.app/anime.html#kan-man-hua",
+        "source": "/user/book/shelf",
+        "target": "/manhuagui/subscribe"
+      },
+      {
+        "title": "漫画更新",
+        "docs": "https://docs.rsshub.app/anime.html#kan-man-hua",
+        "source": "/comic/:id/",
+        "target": "/manhuagui/comic/:id"
+      }
+    ]
+  },
   "mcachicago.org": {
     "_name": "MCA Chicago",
     ".": [
@@ -8236,6 +9893,41 @@
           "/department/details",
           "/"
         ]
+      }
+    ]
+  },
+  "meituclub.com": {
+    "_name": "妹图社",
+    ".": [
+      {
+        "title": "最新",
+        "docs": "https://docs.rsshub.app/picture.html#mei-tu-she-zui-xin",
+        "source": [
+          "/"
+        ],
+        "target": "/meituclub/latest"
+      }
+    ]
+  },
+  "meteor.today": {
+    "_name": "Meteor",
+    ".": [
+      {
+        "title": "看板",
+        "docs": "https://docs.rsshub.app/bbs.html#meteor",
+        "source": [
+          "/board/:board",
+          "/board/:board/new"
+        ],
+        "target": "/meteor/board/:board"
+      },
+      {
+        "title": "看板列表",
+        "docs": "https://docs.rsshub.app/bbs.html#meteor",
+        "source": [
+          "/"
+        ],
+        "target": "/meteor/boards"
       }
     ]
   },
@@ -9167,6 +10859,20 @@
       }
     ]
   },
+  "nextapple.com": {
+    "_name": "壹蘋新聞網",
+    "tw": [
+      {
+        "title": "最新新聞",
+        "docs": "https://docs.rsshub.app/new-media.html#yi-ping-xin-wen-wang",
+        "source": [
+          "/",
+          "/realtime/:category"
+        ],
+        "target": "/nextapple/realtime/:category?"
+      }
+    ]
+  },
   "nga.cn": {
     "_name": "NGA",
     "bbs": [
@@ -9190,6 +10896,26 @@
   "178.com": {
     "_name": "NGA",
     "nga": [
+      {
+        "title": "分区帖子",
+        "docs": "https://docs.rsshub.app/bbs.html#nga-fen-qu-tie-zi",
+        "source": "/thread.php"
+      },
+      {
+        "title": "帖子",
+        "docs": "https://docs.rsshub.app/bbs.html#nga-tie-zi",
+        "source": "/read.php"
+      },
+      {
+        "title": "帖子 - 只看作者",
+        "docs": "https://docs.rsshub.app/bbs.html#nga-tie-zi",
+        "source": "/read.php"
+      }
+    ]
+  },
+  "ngabbs.com": {
+    "_name": "NGA",
+    ".": [
       {
         "title": "分区帖子",
         "docs": "https://docs.rsshub.app/bbs.html#nga-fen-qu-tie-zi",
@@ -9388,9 +11114,32 @@
         "docs": "https://docs.rsshub.app/university.html#nan-jing-da-xue-ben-ke-ying-xin",
         "source": [
           "/tzgg/index.html",
+          "/tzgg",
           "/"
         ],
         "target": "/nju/admission"
+      }
+    ],
+    "dafls": [
+      {
+        "title": "大学外语部",
+        "docs": "https://docs.rsshub.app/university.html#nan-jing-da-xue-da-xue-wai-yu-bu",
+        "source": [
+          "/13167/list.html",
+          "/"
+        ],
+        "target": "/nju/dafls"
+      }
+    ],
+    "elite": [
+      {
+        "title": "本科生交换生系统",
+        "docs": "https://docs.rsshub.app/university.html#nan-jing-da-xue-ben-ke-sheng-yuan-jiao-huan-sheng-xi-tong",
+        "source": [
+          "/exchangesystem/index/more",
+          "/exchangesystem",
+          "/"
+        ]
       }
     ],
     "grawww": [
@@ -9398,6 +11147,7 @@
         "title": "研究生院",
         "docs": "https://docs.rsshub.app/university.html#nan-jing-da-xue-yan-jiu-sheng-yuan",
         "source": [
+          "/main.htm",
           "/"
         ],
         "target": "/nju/gra"
@@ -9419,7 +11169,7 @@
         "title": "本科生院",
         "docs": "https://docs.rsshub.app/university.html#nan-jing-da-xue-ben-ke-sheng-yuan",
         "source": [
-          "/"
+          "/:type/list.htm"
         ],
         "target": "/nju/jw/:type"
       }
@@ -9429,7 +11179,7 @@
         "title": "人才招聘网",
         "docs": "https://docs.rsshub.app/university.html#nan-jing-da-xue-ren-cai-zhao-pin-wang",
         "source": [
-          "/"
+          "/sylm/:type/index.html"
         ],
         "target": "/nju/rczp/:type"
       }
@@ -9439,9 +11189,8 @@
         "title": "科学技术处",
         "docs": "https://docs.rsshub.app/university.html#nan-jing-da-xue-ke-xue-ji-shu-chu",
         "source": [
-          "/"
-        ],
-        "target": "/nju/scit/:type"
+          "/:type/list.htm"
+        ]
       }
     ],
     "webplus": [
@@ -9459,9 +11208,8 @@
         "title": "招标办公室",
         "docs": "https://docs.rsshub.app/university.html#nan-jing-da-xue-zhao-biao-ban-gong-shi",
         "source": [
-          "/"
-        ],
-        "target": "/nju/zbb/:type"
+          "/:type/index.chtml"
+        ]
       }
     ],
     "zcc": [
@@ -9469,6 +11217,8 @@
         "title": "资产管理处",
         "docs": "https://docs.rsshub.app/university.html#nan-jing-da-xue-zi-chan-guan-li-chu",
         "source": [
+          "/tzgg/gyfytdglk/index.html",
+          "/tzgg/index.html",
           "/"
         ],
         "target": "/nju/zcc"
@@ -9549,6 +11299,20 @@
         "docs": "https://docs.rsshub.app/new-media.html#nl-times",
         "source": "/top-stories",
         "target": "/nltimes/news/top-stories"
+      }
+    ]
+  },
+  "nmbxd1.com": {
+    "_name": "X岛匿名版",
+    "www": [
+      {
+        "title": "串",
+        "docs": "https://docs.rsshub.app/bbs.html#x-dao-ni-ming-ban",
+        "source": [
+          "/Forum/timeline/id/:id",
+          "/f/:id"
+        ],
+        "target": "/nmbxd1/:id"
       }
     ]
   },
@@ -9670,11 +11434,60 @@
       }
     ]
   },
+  "nua.edu.cn": {
+    "_name": "南京艺术学院",
+    "index": [
+      {
+        "title": "官网信息",
+        "docs": "https://docs.rsshub.app/university.html#nan-jing-yi-shu-xue-yuan",
+        "source": [
+          "/:type/list.htm"
+        ],
+        "target": "/nua/index/:type"
+      }
+    ],
+    "sxw": [
+      {
+        "title": "双馨网",
+        "docs": "https://docs.rsshub.app/university.html#nan-jing-yi-shu-xue-yuan",
+        "source": [
+          "/:type/list.htm"
+        ],
+        "target": "/nua/sxw/:type"
+      }
+    ],
+    "dc": [
+      {
+        "title": "设计学院",
+        "docs": "https://docs.rsshub.app/university.html#nan-jing-yi-shu-xue-yuan",
+        "source": [
+          "/:type/list.htm"
+        ],
+        "target": "/nua/dc/:type"
+      }
+    ],
+    "grad": [
+      {
+        "title": "研究生处",
+        "docs": "https://docs.rsshub.app/university.html#nan-jing-yi-shu-xue-yuan",
+        "source": [
+          "/:type/list.htm"
+        ],
+        "target": "/nua/gra/:type"
+      }
+    ]
+  },
   "nuaa.edu.cn": {
     "_name": "南京航空航天大学",
     "aao": [
       {
         "title": "教务处",
+        "docs": "https://docs.rsshub.app/university.html#nan-jing-hang-kong-hang-tian-da-xue"
+      }
+    ],
+    "cae": [
+      {
+        "title": "自动化学院",
         "docs": "https://docs.rsshub.app/university.html#nan-jing-hang-kong-hang-tian-da-xue"
       }
     ],
@@ -9688,6 +11501,89 @@
       {
         "title": "研究生院",
         "docs": "https://docs.rsshub.app/university.html#nan-jing-hang-kong-hang-tian-da-xue"
+      }
+    ]
+  },
+  "nuist.edu.cn": {
+    "_name": "南京信息工程大学",
+    "bulletin": [
+      {
+        "title": "信息公告栏",
+        "docs": "https://docs.rsshub.app/university.html#nan-jing-xin-xi-gong-cheng-da-xue",
+        "source": [
+          "/:category/list.htm"
+        ],
+        "target": "/nuist/bulletin/:category"
+      }
+    ],
+    "cas": [
+      {
+        "title": "大气科学学院",
+        "docs": "https://docs.rsshub.app/university.html#nan-jing-xin-xi-gong-cheng-da-xue",
+        "source": [
+          "/index/:category"
+        ]
+      }
+    ],
+    "jwc": [
+      {
+        "title": "教务处",
+        "docs": "https://docs.rsshub.app/university.html#nan-jing-xin-xi-gong-cheng-da-xue",
+        "source": [
+          "/index/:category",
+          "/xxtz/:category"
+        ]
+      }
+    ],
+    "lib": [
+      {
+        "title": "图书馆",
+        "docs": "https://docs.rsshub.app/university.html#nan-jing-xin-xi-gong-cheng-da-xue",
+        "source": [
+          "/",
+          "/index/tzgg.htm"
+        ],
+        "target": "/nuist/lib"
+      }
+    ],
+    "scs": [
+      {
+        "title": "计软院",
+        "docs": "https://docs.rsshub.app/university.html#nan-jing-xin-xi-gong-cheng-da-xue",
+        "source": [
+          "/:category/list.htm"
+        ],
+        "target": "/nuist/scs/:category"
+      }
+    ],
+    "sese": [
+      {
+        "title": "环科院",
+        "docs": "https://docs.rsshub.app/university.html#nan-jing-xin-xi-gong-cheng-da-xue",
+        "source": [
+          "/:category"
+        ]
+      }
+    ],
+    "xgc": [
+      {
+        "title": "学生工作处",
+        "docs": "https://docs.rsshub.app/university.html#nan-jing-xin-xi-gong-cheng-da-xue",
+        "source": [
+          "/",
+          "/419/list.htm"
+        ],
+        "target": "/nuist/xgc"
+      }
+    ],
+    "yjs": [
+      {
+        "title": "研究生院学科建设处",
+        "docs": "https://docs.rsshub.app/university.html#nan-jing-xin-xi-gong-cheng-da-xue",
+        "source": [
+          "/"
+        ],
+        "target": "/nuist/jwc/:path+"
       }
     ]
   },
@@ -9938,6 +11834,85 @@
       }
     ]
   },
+  "oreno3d.com": {
+    "_name": "俺の3Dエロ動画",
+    ".": [
+      {
+        "title": "关键词搜索",
+        "docs": "https://docs.rsshub.app/anime.htm#an-の3dエロ-dong-hua-oreno3d-guan-jian-ci-sou-suo",
+        "source": [
+          "/search"
+        ]
+      },
+      {
+        "title": "角色搜索",
+        "docs": "https://docs.rsshub.app/anime.html#an-の3dエロ-dong-hua-oreno3d-jiao-se-sou-suo",
+        "source": [
+          "/characters/:characterid"
+        ]
+      },
+      {
+        "title": "作者搜索",
+        "docs": "https://docs.rsshub.app/anime.html#an-の3dエロ-dong-hua-oreno3d-zuo-zhe-sou-suo",
+        "source": [
+          "/authors/:authorid"
+        ]
+      },
+      {
+        "title": "标签搜索",
+        "docs": "https://docs.rsshub.app/anime.html#an-の3dエロ-dong-hua-oreno3d-biao-qian-sou-suo",
+        "source": [
+          "/tags/:tagid"
+        ]
+      },
+      {
+        "title": "原作搜索",
+        "docs": "https://docs.rsshub.app/anime.html#an-の3dエロ-dong-hua-oreno3d-yuan-zuo-sou-suo",
+        "source": [
+          "/origins/:originid"
+        ]
+      }
+    ]
+  },
+  "oschina.net": {
+    "_name": "开源中国",
+    ".": [
+      {
+        "title": "资讯",
+        "docs": "https://docs.rsshub.app/programming.html#kai-yuan-zhong-guo",
+        "source": [
+          "/news/:category"
+        ],
+        "target": "/oschina/news/:category"
+      },
+      {
+        "title": "问答主题",
+        "docs": "https://docs.rsshub.app/programming.html#kai-yuan-zhong-guo",
+        "source": [
+          "/question/topic/:topic"
+        ],
+        "target": "/oschina/topic/:topic"
+      }
+    ],
+    "my": [
+      {
+        "title": "用户博客",
+        "docs": "https://docs.rsshub.app/programming.html#kai-yuan-zhong-guo",
+        "source": [
+          "/:id"
+        ],
+        "target": "/oschina/user/:id"
+      },
+      {
+        "title": "数字型账号用户博客",
+        "docs": "https://docs.rsshub.app/programming.html#kai-yuan-zhong-guo",
+        "source": [
+          "/u/:uid"
+        ],
+        "target": "/oschina/u/:uid"
+      }
+    ]
+  },
   "oup.com": {
     "_name": "Oxford University Press",
     "academic": [
@@ -10089,6 +12064,48 @@
       }
     ]
   },
+  "pixiv.net": {
+    "_name": "Pixiv",
+    "www": [
+      {
+        "title": "用户收藏",
+        "docs": "https://docs.rsshub.app/social-media.html#pixiv",
+        "source": "/users/:id/bookmarks/artworks",
+        "target": "/pixiv/user/bookmarks/:id"
+      },
+      {
+        "title": "用户动态",
+        "docs": "https://docs.rsshub.app/social-media.html#pixiv",
+        "source": "/users/:id",
+        "target": "/pixiv/user/:id"
+      },
+      {
+        "title": "用户小说",
+        "docs": "https://docs.rsshub.app/social-media.html#pixiv",
+        "source": "/users/:id/novels",
+        "target": "/pixiv/user/novels/:id"
+      },
+      {
+        "title": "排行榜",
+        "docs": "https://docs.rsshub.app/social-media.html#pixiv",
+        "source": "/ranking.php"
+      },
+      {
+        "title": "关键词",
+        "docs": "https://docs.rsshub.app/social-media.html#pixiv",
+        "source": [
+          "/tags/:keyword",
+          "/tags/:keyword/:type?"
+        ]
+      },
+      {
+        "title": "关注的新作品",
+        "docs": "https://docs.rsshub.app/social-media.html#pixiv",
+        "source": "/bookmark_new_illust.php",
+        "target": "/pixiv/user/illustfollows"
+      }
+    ]
+  },
   "pku.edu.cn": {
     "_name": "北京大学",
     "admission": [
@@ -10226,6 +12243,64 @@
       }
     ]
   },
+  "plurk.com": {
+    "_name": "Plurk",
+    ".": [
+      {
+        "title": "話題",
+        "docs": "https://docs.rsshub.app/social-media.html#plurk",
+        "source": [
+          "/topic/:topic"
+        ],
+        "target": "/plurk/topic/:topic"
+      },
+      {
+        "title": "話題排行榜",
+        "docs": "https://docs.rsshub.app/social-media.html#plurk",
+        "source": [
+          "/top"
+        ]
+      },
+      {
+        "title": "偷偷說",
+        "docs": "https://docs.rsshub.app/social-media.html#plurk",
+        "source": [
+          "/anonymous"
+        ],
+        "target": "/plurk/anonymous"
+      },
+      {
+        "title": "搜尋",
+        "docs": "https://docs.rsshub.app/social-media.html#plurk",
+        "source": [
+          "/search"
+        ]
+      },
+      {
+        "title": "最近分享",
+        "docs": "https://docs.rsshub.app/social-media.html#plurk",
+        "source": [
+          "/hotlinks"
+        ],
+        "target": "/plurk/hotlinks"
+      },
+      {
+        "title": "噗浪消息",
+        "docs": "https://docs.rsshub.app/social-media.html#plurk",
+        "source": [
+          "/news"
+        ],
+        "target": "/plurk/news"
+      },
+      {
+        "title": "用戶",
+        "docs": "https://docs.rsshub.app/social-media.html#plurk",
+        "source": [
+          "/:user"
+        ]
+      }
+    ]
+  },
   "pmthinking.com": {
     "_name": "产品沉思录",
     ".": [
@@ -10236,6 +12311,21 @@
           "/"
         ],
         "target": "/pmthinking"
+      }
+    ]
+  },
+  "polkadot.network": {
+    "_name": "Polkadot",
+    ".": [
+      {
+        "title": "Blog",
+        "docs": "https://docs.rsshub.app/blog.html#polkadot",
+        "source": [
+          "/",
+          "/blog/",
+          "/blog/*"
+        ],
+        "target": "/polkadot/blog"
       }
     ]
   },
@@ -10312,6 +12402,15 @@
           "/"
         ],
         "target": "/pts/curations"
+      },
+      {
+        "title": "整理報導",
+        "docs": "https://docs.rsshub.app/traditional-media.html#gong-shi-xin-wen-wang-zheng-li-bao-dao",
+        "source": [
+          "/live/:id",
+          "/"
+        ],
+        "target": "/pts/live/:id"
       },
       {
         "title": "觀點",
@@ -10398,6 +12497,67 @@
           "/"
         ],
         "target": "/qbittorrent/news"
+      }
+    ]
+  },
+  "qianzhan.com": {
+    "_name": "前瞻网",
+    ".": [
+      {
+        "title": "文章列表",
+        "docs": "https://docs.rsshub.app/finance.html#qian-zhan-wang",
+        "source": [
+          "/analyst",
+          "/analyst/list/:html"
+        ]
+      },
+      {
+        "title": "排行榜",
+        "docs": "https://docs.rsshub.app/finance.html#qian-zhan-wang",
+        "source": [
+          "/analyst",
+          "/"
+        ],
+        "target": "/qianzhan/analyst/rank"
+      }
+    ]
+  },
+  "qidian.com": {
+    "_name": "起点",
+    "book": [
+      {
+        "title": "章节",
+        "docs": "https://docs.rsshub.app/reading.html#qi-dian",
+        "source": "/info/:id",
+        "target": "/qidian/chapter/:id"
+      },
+      {
+        "title": "讨论区",
+        "docs": "https://docs.rsshub.app/reading.html#qi-dian",
+        "source": "/info/:id",
+        "target": "/qidian/forum/:id"
+      }
+    ],
+    "my": [
+      {
+        "title": "作者",
+        "docs": "https://docs.rsshub.app/reading.html#qi-dian",
+        "source": "/author/:id",
+        "target": "/qidian/author/:id"
+      }
+    ],
+    "www": [
+      {
+        "title": "限免",
+        "docs": "https://docs.rsshub.app/reading.html#qi-dian",
+        "source": "/free",
+        "target": "/qidian/free"
+      },
+      {
+        "title": "女生限免",
+        "docs": "https://docs.rsshub.app/reading.html#qi-dian",
+        "source": "/mm/free",
+        "target": "/qidian/free/mm"
       }
     ]
   },
@@ -10580,6 +12740,19 @@
       }
     ]
   },
+  "rarehistoricalphotos.com": {
+    "_name": "Rare Historical Photos",
+    ".": [
+      {
+        "title": "Home",
+        "docs": "https://docs.rsshub.app/en/picture.html#rare-historical-photos",
+        "source": [
+          "/"
+        ],
+        "target": "/rarehistoricalphotos"
+      }
+    ]
+  },
   "readhub.cn": {
     "_name": "Readhub",
     ".": [
@@ -10590,6 +12763,20 @@
           "/",
           "/:category"
         ]
+      }
+    ]
+  },
+  "remnote.com": {
+    "_name": "RemNote",
+    ".": [
+      {
+        "title": "Changelog",
+        "docs": "https://docs.rsshub.app/program-update.html#remnote",
+        "source": [
+          "/changelog",
+          "/"
+        ],
+        "target": "/remnote/changelog"
       }
     ]
   },
@@ -10706,6 +12893,19 @@
       }
     ]
   },
+  "rustcc.cn": {
+    "_name": "Rust语言中文社区",
+    ".": [
+      {
+        "title": "招聘",
+        "docs": "https://docs.rsshub.app/programming.html#rust-yu-yan-zhong-wen-she-qu",
+        "source": [
+          "/"
+        ],
+        "target": "/rustcc/jobs"
+      }
+    ]
+  },
   "sakurazaka46.com": {
     "_name": "櫻坂46",
     ".": [
@@ -10739,6 +12939,47 @@
           "/"
         ],
         "target": "/samsung/research/blog"
+      }
+    ]
+  },
+  "saraba1st.com": {
+    "_name": "Saraba1st",
+    "bbs": [
+      {
+        "title": "帖子",
+        "docs": "https://docs.rsshub.app/bbs.html#saraba1st",
+        "source": "/2b/:id"
+      }
+    ]
+  },
+  "science.org": {
+    "_name": "Science Magazine",
+    ".": [
+      {
+        "title": "本期刊物",
+        "docs": "https://docs.rsshub.app/journal.html#science-xi-lie",
+        "source": [
+          "/journal/:journal",
+          "/toc/:journal/current"
+        ],
+        "target": "/science/current/:journal"
+      },
+      {
+        "title": "封面故事",
+        "docs": "https://docs.rsshub.app/journal.html#science-xi-lie",
+        "source": [
+          "/"
+        ],
+        "target": "/science/cover"
+      },
+      {
+        "title": "在线发表",
+        "docs": "https://docs.rsshub.app/journal.html#science-xi-lie",
+        "source": [
+          "/journal/:journal",
+          "/toc/:journal/0/0"
+        ],
+        "target": "/science/early/:journal"
       }
     ]
   },
@@ -11031,6 +13272,41 @@
       }
     ]
   },
+  "secrss.com": {
+    "_name": "安全内参",
+    ".": [
+      {
+        "title": "分类",
+        "docs": "https://docs.rsshub.app/programming.html#an-quan-nei-can",
+        "source": [
+          "/articles",
+          "/"
+        ]
+      },
+      {
+        "title": "作者",
+        "docs": "https://docs.rsshub.app/programming.html#an-quan-nei-can",
+        "source": [
+          "/articles",
+          "/"
+        ]
+      }
+    ]
+  },
+  "seekingalpha.com": {
+    "_name": "Seeking Alpha",
+    ".": [
+      {
+        "title": "Summary",
+        "docs": "https://docs.rsshub.app/en/finance.html#seeking-alpha",
+        "source": [
+          "/symbol/:symbol/:category",
+          "/symbol/:symbol/earnings/:category"
+        ],
+        "target": "/seekingalpha/:symbol/:category"
+      }
+    ]
+  },
   "segmentfault.com": {
     "_name": "SegmentFault",
     ".": [
@@ -11040,7 +13316,7 @@
         "source": [
           "/channel/:name"
         ],
-        "target": "/channel/:name"
+        "target": "/segmentfault/channel/:name"
       },
       {
         "title": "用户",
@@ -11048,7 +13324,32 @@
         "source": [
           "/u/:name"
         ],
-        "target": "/user/:name"
+        "target": "/segmentfault/user/:name"
+      },
+      {
+        "title": "博客",
+        "docs": "https://docs.rsshub.app/programming.html#segmentfault",
+        "source": [
+          "/t/:tag/blogs"
+        ],
+        "target": "/segmentfault/blogs/:tag"
+      }
+    ]
+  },
+  "sensortower.com": {
+    "_name": "Sensor Tower",
+    ".": [
+      {
+        "title": "Blog",
+        "docs": "https://docs.rsshub.app/new-media.html#sensor-tower-blog",
+        "source": [
+          "/blog",
+          "/zh-CN/blog",
+          "/ja/blog",
+          "/ko/blog",
+          "/"
+        ],
+        "target": "/sensortower/blog"
       }
     ]
   },
@@ -11453,6 +13754,57 @@
       }
     ]
   },
+  "sse.com.cn": {
+    "_name": "上海证券交易所",
+    "bond": [
+      {
+        "title": "可转换公司债券公告",
+        "docs": "https://docs.rsshub.app/finance.html#shang-hai-zheng-quan-jiao-yi-suo",
+        "source": [
+          "/disclosure/announ/convertible",
+          "/"
+        ]
+      }
+    ],
+    "kcb": [
+      {
+        "title": "科创板项目动态",
+        "docs": "https://docs.rsshub.app/finance.html#shang-hai-zheng-quan-jiao-yi-suo",
+        "source": [
+          "/home",
+          "/"
+        ],
+        "target": "/sse/renewal"
+      }
+    ],
+    "www": [
+      {
+        "title": "监管问询",
+        "docs": "https://docs.rsshub.app/finance.html#shang-hai-zheng-quan-jiao-yi-suo",
+        "source": [
+          "/disclosure/credibility/supervision/inquiries",
+          "/"
+        ],
+        "target": "/sse/inquire"
+      },
+      {
+        "title": "上市公司信息最新公告披露",
+        "docs": "https://docs.rsshub.app/finance.html#shang-hai-zheng-quan-jiao-yi-suo",
+        "source": [
+          "/assortment/stock/list/info/announcement/index.shtml",
+          "/"
+        ]
+      },
+      {
+        "title": "本所业务指南与流程",
+        "docs": "https://docs.rsshub.app/finance.html#shang-hai-zheng-quan-jiao-yi-suo",
+        "source": [
+          "/lawandrules/guide/*slug",
+          "/"
+        ]
+      }
+    ]
+  },
   "ssm.gov.mo": {
     "_name": "澳门卫生局",
     "www": [
@@ -11602,6 +13954,18 @@
       }
     ]
   },
+  "stheadline.com": {
+    "_name": "星島日報",
+    "std": [
+      {
+        "title": "即時",
+        "docs": "https://docs.rsshub.app/traditional-media.html#xing-dao-ri-bao",
+        "source": [
+          "/realtime/*category"
+        ]
+      }
+    ]
+  },
   "storm.mg": {
     "_name": "風傳媒",
     ".": [
@@ -11612,6 +13976,19 @@
           "/:category/:id"
         ],
         "target": "/storm/:category?/:id?"
+      }
+    ]
+  },
+  "studygolang.com": {
+    "_name": "Go 语言中文网",
+    ".": [
+      {
+        "title": "招聘",
+        "docs": "https://docs.rsshub.app/programming.html#go-yu-yan-zhong-wen-wang",
+        "source": [
+          "/"
+        ],
+        "target": "/studygolang/jobs"
       }
     ]
   },
@@ -11886,6 +14263,29 @@
       }
     ]
   },
+  "taoguba.com.cn": {
+    "_name": "淘股吧",
+    ".": [
+      {
+        "title": "淘股论坛",
+        "docs": "https://docs.rsshub.app/finance.html#tao-gu-ba-tao-gu-lun-tan",
+        "source": [
+          "/:category",
+          "/"
+        ],
+        "target": "/taoguba/:category"
+      },
+      {
+        "title": "用户博客",
+        "docs": "https://docs.rsshub.app/finance.html#tao-gu-ba-yong-hu-bo-ke",
+        "source": [
+          "/blog/:id",
+          "/"
+        ],
+        "target": "/taoguba/blog/:id"
+      }
+    ]
+  },
   "taptap.com": {
     "_name": "TapTap",
     ".": [
@@ -11917,24 +14317,46 @@
       }
     ]
   },
-  "techflow520.com": {
+  "taptap.io": {
+    "_name": "TapTap International",
+    ".": [
+      {
+        "title": "Changelog",
+        "docs": "https://docs.rsshub.app/game.html#taptap",
+        "source": [
+          "/app/:id"
+        ],
+        "target": "/taptap/intl/changelog/:id"
+      },
+      {
+        "title": "Ratings & Reviews",
+        "docs": "https://docs.rsshub.app/game.html#taptap",
+        "source": [
+          "/app/:id/review",
+          "/app/:id"
+        ],
+        "target": "/taptap/intl/review/:id"
+      }
+    ]
+  },
+  "techflowpost.com": {
     "_name": "深潮TechFlow",
     ".": [
       {
-        "title": "分类",
-        "docs": "https://docs.rsshub.app/new-media.html#shen-chao-techflow-fen-lei",
+        "title": "首页",
+        "docs": "https://docs.rsshub.app/new-media.html#shen-chao-techflow-shou-ye",
         "source": [
           "/"
         ],
-        "target": "/techflow520/:category?"
+        "target": "/techflowpost"
       },
       {
         "title": "快讯",
         "docs": "https://docs.rsshub.app/new-media.html#shen-chao-techflow-kuai-xun",
         "source": [
-          "/newsflash"
+          "/express"
         ],
-        "target": "/techflow520/newsflash"
+        "target": "/techflowpost/express"
       }
     ]
   },
@@ -11992,6 +14414,106 @@
       }
     ]
   },
+  "theinitium.com": {
+    "_name": "端传媒",
+    ".": [
+      {
+        "title": "专题・栏目",
+        "docs": "https://docs.rsshub.app/new-media.html#duan-chuan-mei",
+        "source": "/channel/:type",
+        "target": "/theinitium/channel/:type"
+      },
+      {
+        "title": "话题・标签",
+        "docs": "https://docs.rsshub.app/new-media.html#duan-chuan-mei",
+        "source": "/tags/:type",
+        "target": "/theinitions/tags/:type"
+      },
+      {
+        "title": "作者",
+        "docs": "https://docs.rsshub.app/new-media.html#duan-chuan-mei",
+        "source": "/author/:type",
+        "target": "/theinitium/author/:type"
+      }
+    ]
+  },
+  "thenewslens.com": {
+    "_name": "The News Lens 關鍵評論",
+    ".": [
+      {
+        "title": "最新",
+        "docs": "https://docs.rsshub.app/new-media.html#the-news-lens-guan-jian-ping-lun",
+        "source": [
+          "/latest-article/:sort?",
+          "/"
+        ],
+        "target": "/thenewslens/latest-article/:sort?"
+      },
+      {
+        "title": "新闻",
+        "docs": "https://docs.rsshub.app/new-media.html#the-news-lens-guan-jian-ping-lun",
+        "source": [
+          "/news/:sort?",
+          "/"
+        ],
+        "target": "/thenewslens/news/:sort?"
+      },
+      {
+        "title": "作者",
+        "docs": "https://docs.rsshub.app/new-media.html#the-news-lens-guan-jian-ping-lun",
+        "source": [
+          "/author/:id/:sort?",
+          "/"
+        ],
+        "target": "/thenewslens/author/:id/:sort?"
+      },
+      {
+        "title": "分类",
+        "docs": "https://docs.rsshub.app/new-media.html#the-news-lens-guan-jian-ping-lun",
+        "source": [
+          "/category/:id/:sort?",
+          "/"
+        ],
+        "target": "/thenewslens/category/:id/:sort?"
+      },
+      {
+        "title": "标签",
+        "docs": "https://docs.rsshub.app/new-media.html#the-news-lens-guan-jian-ping-lun",
+        "source": [
+          "/tag/:id/:sort?",
+          "/"
+        ],
+        "target": "/thenewslens/tag/:id/:sort?"
+      },
+      {
+        "title": "频道",
+        "docs": "https://docs.rsshub.app/new-media.html#the-news-lens-guan-jian-ping-lun",
+        "source": [
+          "/channel/:id/:sort?",
+          "/"
+        ],
+        "target": "/thenewslens/channel/:id/:sort?"
+      },
+      {
+        "title": "评论",
+        "docs": "https://docs.rsshub.app/new-media.html#the-news-lens-guan-jian-ping-lun",
+        "source": [
+          "/review/:sort?",
+          "/"
+        ],
+        "target": "/thenewslens/review/:sort?"
+      },
+      {
+        "title": "影音",
+        "docs": "https://docs.rsshub.app/new-media.html#the-news-lens-guan-jian-ping-lun",
+        "source": [
+          "/videos/Projects/:sort?",
+          "/"
+        ],
+        "target": "/thenewslens/videos/Projects/:sort?"
+      }
+    ]
+  },
   "thepaper.cn": {
     "_name": "澎湃新闻",
     ".": [
@@ -12011,7 +14533,7 @@
         ]
       },
       {
-        "title": "列表",
+        "title": "栏目",
         "docs": "https://docs.rsshub.app/traditional-media.html#peng-pai-xin-wen-lie-biao",
         "source": [
           "/"
@@ -12037,6 +14559,20 @@
           "/"
         ],
         "target": "/thepaper/factpaper/:status"
+      }
+    ]
+  },
+  "thwiki.cc": {
+    "_name": "THBWiki",
+    ".": [
+      {
+        "title": "日历",
+        "docs": "https://docs.rsshub.app/#thbwiki",
+        "source": [
+          "/",
+          "/日程表"
+        ],
+        "target": "/thwiki/calendar"
       }
     ]
   },
@@ -12528,6 +15064,60 @@
       }
     ]
   },
+  "tvb.com": {
+    "_name": "无线新闻",
+    ".": [
+      {
+        "title": "新闻",
+        "docs": "https://docs.rsshub.app/traditional-media.html#wu-xian-xin-wen-xin-wen",
+        "source": [
+          "/:language/:category",
+          "/"
+        ],
+        "target": "/tvb/news/:category?/:language?"
+      }
+    ]
+  },
+  "twitter.com": {
+    "_name": "Twitter",
+    ".": [
+      {
+        "title": "用户时间线",
+        "docs": "https://docs.rsshub.app/social-media.html#twitter",
+        "source": "/:id"
+      },
+      {
+        "title": "用户媒体时间线",
+        "docs": "https://docs.rsshub.app/social-media.html#twitter",
+        "source": "/:id/media"
+      },
+      {
+        "title": "用户关注时间线",
+        "docs": "https://docs.rsshub.app/social-media.html#twitter",
+        "source": "/:id"
+      },
+      {
+        "title": "用户喜欢列表",
+        "docs": "https://docs.rsshub.app/social-media.html#twitter",
+        "source": "/:id"
+      },
+      {
+        "title": "列表时间线",
+        "docs": "https://docs.rsshub.app/social-media.html#twitter",
+        "source": "/:id/lists/:name"
+      },
+      {
+        "title": "关键词",
+        "docs": "https://docs.rsshub.app/social-media.html#twitter",
+        "source": "/search"
+      },
+      {
+        "title": "推文收集",
+        "docs": "https://docs.rsshub.app/social-media.html#twitter",
+        "source": "/:uid/timelines/:collectionId"
+      }
+    ]
+  },
   "twreporter.org": {
     "_name": "報導者",
     ".": [
@@ -12569,6 +15159,21 @@
       }
     ]
   },
+  "tynu.edu.cn": {
+    "_name": "太原师范学院",
+    ".": [
+      {
+        "title": "通知公告",
+        "docs": "https://docs.rsshub.app/university.html#tai-yuan-shi-fan-xue-yuan",
+        "source": [
+          "/index/tzgg.htm",
+          "/index.htm",
+          "/"
+        ],
+        "target": "/tynu"
+      }
+    ]
+  },
   "u3c3.com": {
     "_name": "u3c3",
     ".": [
@@ -12581,6 +15186,17 @@
         "title": "关键词搜索",
         "docs": "https://docs.rsshub.app/multimedia.html#u3c3-guan-jian-ci-sou-suo",
         "source": "/"
+      }
+    ]
+  },
+  "udn.com": {
+    "_name": "聯合新聞網",
+    ".": [
+      {
+        "title": "即時新聞",
+        "docs": "https://docs.rsshub.app/new-media.html#lian-he-xin-wen-wang-ji-shi-xin-wen",
+        "source": "/news/breaknews/1/:id",
+        "target": "/udn/news/breakingnews/:id"
       }
     ]
   },
@@ -12665,6 +15281,20 @@
           "/reports/brokerage_news"
         ],
         "target": "/ulapia/reports/brokerage_news"
+      }
+    ]
+  },
+  "unusualwhales.com": {
+    "_name": "Unusual Whales",
+    ".": [
+      {
+        "title": "News Flow",
+        "docs": "https://docs.rsshub.app/en/finance.html#unusual-whales",
+        "source": [
+          "/news",
+          "/"
+        ],
+        "target": "/unusualwhales/news"
       }
     ]
   },
@@ -12852,6 +15482,20 @@
       }
     ]
   },
+  "vom.mn": {
+    "_name": "蒙古之声",
+    ".": [
+      {
+        "title": "新闻",
+        "docs": "https://docs.rsshub.app/traditional-media.html#meng-gu-zhi-sheng",
+        "source": [
+          "/:lang",
+          "/"
+        ],
+        "target": "/vom/featured/:lang"
+      }
+    ]
+  },
   "wallhaven.cc": {
     "_name": "wallhaven",
     ".": [
@@ -12931,6 +15575,14 @@
           "/"
         ],
         "target": "/wallstreetcn/live/:category?"
+      },
+      {
+        "title": "最热文章",
+        "docs": "https://docs.rsshub.app/traditional-media.html#hua-er-jie-jian-wen-zui-re-wen-zhang",
+        "source": [
+          "/"
+        ],
+        "target": "/wallstreetcn/hot/:period?"
       }
     ]
   },
@@ -12945,6 +15597,20 @@
           "/"
         ],
         "target": "/wangqiutiyu/anchor/:id"
+      }
+    ]
+  },
+  "warthunder.com": {
+    "_name": "War Thunder",
+    ".": [
+      {
+        "title": "News",
+        "docs": "https://docs.rsshub.app/game.html#war-thunder-ying-wen-news",
+        "source": [
+          "/en/news",
+          "/"
+        ],
+        "target": "/warthunder/news"
       }
     ]
   },
@@ -12969,6 +15635,18 @@
         "docs": "https://docs.rsshub.app/program-update.html#western-digital-download",
         "source": [
           "/downloads.aspx",
+          "/"
+        ]
+      }
+    ]
+  },
+  "web3caff.com": {
+    "_name": "web3caff",
+    ".": [
+      {
+        "title": "发现",
+        "docs": "https://docs.rsshub.app/new-media.html#web3caff-fa-xian",
+        "source": [
           "/"
         ]
       }
@@ -13243,6 +15921,32 @@
       }
     ]
   },
+  "antibody-software.com": {
+    "_name": "WizFile",
+    ".": [
+      {
+        "title": "更新日志",
+        "docs": "https://docs.rsshub.app/new-media.html#wei-ji-xin-wen",
+        "source": [
+          "/wizfile/download"
+        ],
+        "target": "/wizfile/updates"
+      }
+    ]
+  },
+  "worldjournal.com": {
+    "_name": "世界新聞網",
+    ".": [
+      {
+        "title": "新聞",
+        "docs": "https://docs.rsshub.app/new-media.html#shi-jie-xin-wen-wang",
+        "source": [
+          "/wj/*path"
+        ],
+        "target": "/worldjournal/:path"
+      }
+    ]
+  },
   "wp-china.com": {
     "_name": "中国工人出版社",
     ".": [
@@ -13469,6 +16173,15 @@
           "/"
         ]
       }
+    ],
+    "www.dyyy": [
+      {
+        "title": "第一附属医院新闻",
+        "docs": "https://docs.rsshub.app/university.html#xi-an-jiao-tong-da-xue",
+        "source": [
+          "/*"
+        ]
+      }
     ]
   },
   "xmanhua.com": {
@@ -13481,6 +16194,20 @@
           "/:uid"
         ],
         "target": "/xmanhua/:uid"
+      }
+    ]
+  },
+  "xmnn.cn": {
+    "_name": "厦门网",
+    "epaper": [
+      {
+        "title": "数字媒体",
+        "docs": "https://docs.rsshub.app/traditional-media.html#xia-men-wang-shu-zi-mei-ti",
+        "source": [
+          "/:id",
+          "/"
+        ],
+        "target": "/xmnn/epaper/:id"
       }
     ]
   },
@@ -13563,6 +16290,61 @@
           "/"
         ],
         "target": "/xueqiu/hots"
+      }
+    ]
+  },
+  "xwlb.com.cn": {
+    "_name": "新闻联播直播",
+    ".": [
+      {
+        "title": "新闻联播文字版完整版",
+        "docs": "https://docs.rsshub.app/traditional-media.html#yang-shi-xin-wen",
+        "source": [
+          "/cctv.html",
+          "/"
+        ],
+        "target": "/xwlb"
+      }
+    ]
+  },
+  "xyzrank.com": {
+    "_name": "中文播客榜",
+    ".": [
+      {
+        "title": "热门节目",
+        "docs": "https://docs.rsshub.app/multimedia.html#zhong-wen-bo-ke-bang-re-men-jie-mu",
+        "source": [
+          "/#/",
+          "/"
+        ],
+        "target": "/xyzrank"
+      },
+      {
+        "title": "热门播客",
+        "docs": "https://docs.rsshub.app/multimedia.html#zhong-wen-bo-ke-bang-re-men-bo-ke",
+        "source": [
+          "/#/hot-podcasts",
+          "/"
+        ],
+        "target": "/xyzrank/hot-podcasts"
+      },
+      {
+        "title": "新锐节目",
+        "docs": "https://docs.rsshub.app/multimedia.html#zhong-wen-bo-ke-bang-xin-rui-jie-mu",
+        "source": [
+          "/#/hot-episodes-new",
+          "/"
+        ],
+        "target": "/xyzrank/hot-episodes-new"
+      },
+      {
+        "title": "新锐播客",
+        "docs": "https://docs.rsshub.app/multimedia.html#zhong-wen-bo-ke-bang-xin-rui-bo-ke",
+        "source": [
+          "/#/new-podcasts",
+          "/"
+        ],
+        "target": "/xyzrank/new-podcasts"
       }
     ]
   },
@@ -13650,6 +16432,47 @@
           "/author"
         ],
         "target": "/yicai/author/:id"
+      }
+    ]
+  },
+  "yoasobi-music.jp": {
+    "_name": "Yoasobi Official",
+    "www": [
+      {
+        "title": "News",
+        "docs": "https://docs.rsshub.app/en/live.html#yoasobi",
+        "source": [
+          "/",
+          "/:category"
+        ],
+        "target": "/yoasobi-music/info/:category"
+      },
+      {
+        "title": "Biography",
+        "docs": "https://docs.rsshub.app/en/live.html#yoasobi",
+        "source": [
+          "/",
+          "/:category"
+        ],
+        "target": "/yoasobi-music/info/:category"
+      },
+      {
+        "title": "Live",
+        "docs": "https://docs.rsshub.app/en/live.html#yoasobi",
+        "source": [
+          "/",
+          "/live"
+        ],
+        "target": "/yoasobi-music/live"
+      },
+      {
+        "title": "Media",
+        "docs": "https://docs.rsshub.app/en/live.html#yoasobi",
+        "source": [
+          "/",
+          "/media"
+        ],
+        "target": "/yoasobi-music/media"
       }
     ]
   },
@@ -13777,6 +16600,27 @@
           "/"
         ],
         "target": "/yunspe/newsflashes"
+      }
+    ]
+  },
+  "yxdown.com": {
+    "_name": "游讯网",
+    ".": [
+      {
+        "title": "资讯",
+        "docs": "https://docs.rsshub.app/game.html#you-xun-wang",
+        "source": [
+          "/news/:category",
+          "/news"
+        ]
+      },
+      {
+        "title": "精彩推荐",
+        "docs": "https://docs.rsshub.app/game.html#you-xun-wang",
+        "source": [
+          "/"
+        ],
+        "target": "/yxdown/recommend"
       }
     ]
   },
@@ -13945,6 +16789,63 @@
           "/news/world"
         ],
         "target": "/zaobao/znews/world"
+      }
+    ]
+  },
+  "zcool.com.cn": {
+    "_name": "站酷",
+    "www": [
+      {
+        "title": "发现",
+        "docs": "https://docs.rsshub.app/design.html#zhan-ku",
+        "source": [
+          "/discover",
+          "/"
+        ]
+      },
+      {
+        "title": "发现 - 精选 - 全部推荐",
+        "docs": "https://docs.rsshub.app/design.html#zhan-ku",
+        "source": "",
+        "target": "/zcool/discover/all"
+      },
+      {
+        "title": "发现 - 精选 - 首页推荐",
+        "docs": "https://docs.rsshub.app/design.html#zhan-ku",
+        "source": "",
+        "target": "/zcool/discover/home"
+      },
+      {
+        "title": "发现 - 精选 - 编辑精选",
+        "docs": "https://docs.rsshub.app/design.html#zhan-ku",
+        "source": "",
+        "target": "/zcool/discover/home"
+      },
+      {
+        "title": "发现 - 精选 - 文章 - 编辑精选",
+        "docs": "https://docs.rsshub.app/design.html#zhan-ku",
+        "source": "",
+        "target": "/zcool/discover/article"
+      },
+      {
+        "title": "作品榜单",
+        "docs": "https://docs.rsshub.app/design.html#zhan-ku",
+        "source": "",
+        "target": "/zcool/top/design"
+      },
+      {
+        "title": "文章榜单",
+        "docs": "https://docs.rsshub.app/design.html#zhan-ku",
+        "source": "",
+        "target": "/zcool/top/article"
+      },
+      {
+        "title": "用户作品",
+        "docs": "https://docs.rsshub.app/design.html#zhan-ku",
+        "source": [
+          "/u/:id"
+        ],
+        "target": "/zcool/user/:id"
       }
     ]
   },
@@ -14137,6 +17038,16 @@
       }
     ]
   },
+  "zodgame.xyz": {
+    "_name": "zodgame",
+    ".": [
+      {
+        "title": "论坛版块",
+        "docs": "https://docs.rsshub.app/bbs.html#zodgame",
+        "source": "/forum.php"
+      }
+    ]
+  },
   "zoo.team": {
     "_name": "政采云前端技术团队",
     "weekly": [
@@ -14184,6 +17095,19 @@
       }
     ]
   },
+  "zuvio.com.tw": {
+    "_name": "Zuvio",
+    "irs": [
+      {
+        "title": "校園話題",
+        "docs": "https://docs.rsshub.app/bbs.html#zuvio",
+        "source": [
+          "/student5/chickenM/articles/:board",
+          "/student5/chickenM/articles"
+        ]
+      }
+    ]
+  },
   "zyshow.net": {
     "_name": "综艺秀",
     ".": [
@@ -14209,72 +17133,6 @@
           "/profile/:uid"
         ],
         "target": "/weibo/user/:uid"
-      }
-    ]
-  },
-  "pixiv.net": {
-    "_name": "Pixiv",
-    "www": [
-      {
-        "title": "用户收藏",
-        "docs": "https://docs.rsshub.app/social-media.html#pixiv",
-        "source": "/users/:id/bookmarks/artworks",
-        "target": "/pixiv/user/bookmarks/:id"
-      },
-      {
-        "title": "用户动态",
-        "docs": "https://docs.rsshub.app/social-media.html#pixiv",
-        "source": "/users/:id",
-        "target": "/pixiv/user/:id"
-      },
-      {
-        "title": "排行榜",
-        "docs": "https://docs.rsshub.app/social-media.html#pixiv",
-        "source": "/ranking.php"
-      },
-      {
-        "title": "关键词",
-        "docs": "https://docs.rsshub.app/social-media.html#pixiv",
-        "source": [
-          "/tags/:keyword",
-          "/tags/:keyword/:type?"
-        ]
-      },
-      {
-        "title": "关注的新作品",
-        "docs": "https://docs.rsshub.app/social-media.html#pixiv",
-        "source": "/bookmark_new_illust.php",
-        "target": "/pixiv/user/illustfollows"
-      }
-    ]
-  },
-  "twitter.com": {
-    "_name": "Twitter",
-    ".": [
-      {
-        "title": "用户时间线",
-        "docs": "https://docs.rsshub.app/social-media.html#twitter",
-        "source": "/:id"
-      },
-      {
-        "title": "用户关注时间线",
-        "docs": "https://docs.rsshub.app/social-media.html#twitter",
-        "source": "/:id"
-      },
-      {
-        "title": "用户喜欢列表",
-        "docs": "https://docs.rsshub.app/social-media.html#twitter",
-        "source": "/:id"
-      },
-      {
-        "title": "列表时间线",
-        "docs": "https://docs.rsshub.app/social-media.html#twitter",
-        "source": "/:id/lists/:name"
-      },
-      {
-        "title": "关键词",
-        "docs": "https://docs.rsshub.app/social-media.html#twitter",
-        "source": "/search"
       }
     ]
   },
@@ -14390,39 +17248,6 @@
       }
     ]
   },
-  "manhuagui.com": {
-    "_name": "漫画柜",
-    "www": [
-      {
-        "title": "漫画更新",
-        "docs": "https://docs.rsshub.app/anime.html#kan-man-hua",
-        "source": "/comic/:id/",
-        "target": "/manhuagui/comic/:id"
-      }
-    ]
-  },
-  "mhgui.com": {
-    "_name": "漫画柜镜像站",
-    "www": [
-      {
-        "title": "漫画更新",
-        "docs": "https://docs.rsshub.app/anime.html#kan-man-hua-jing-xiang-zhan",
-        "source": "/comic/:id/",
-        "target": "/mhgui/comic/:id"
-      }
-    ]
-  },
-  "tw.manhuagui.com": {
-    "_name": "漫画柜台湾",
-    "www": [
-      {
-        "title": "漫画更新",
-        "docs": "https://docs.rsshub.app/anime.html#kan-man-hua-tai-wan",
-        "source": "/comic/:id/",
-        "target": "/twmanhuagui/comic/:id"
-      }
-    ]
-  },
   "pgyer.com": {
     "_name": "蒲公英应用分发",
     "www": [
@@ -14431,38 +17256,6 @@
         "docs": "https://docs.rsshub.app/program-update.html#pu-gong-ying-ying-yong-fen-fa",
         "source": "/:app",
         "target": "/pgyer/:app"
-      }
-    ]
-  },
-  "baidu.com": {
-    "_name": "贴吧",
-    "tieba": [
-      {
-        "title": "帖子列表",
-        "docs": "https://docs.rsshub.app/bbs.html#tie-ba",
-        "source": "f"
-      },
-      {
-        "title": "精品帖子",
-        "docs": "https://docs.rsshub.app/bbs.html#tie-ba",
-        "source": "f"
-      },
-      {
-        "title": "帖子动态",
-        "docs": "https://docs.rsshub.app/bbs.html#tie-ba",
-        "source": "/p/:id",
-        "target": "/tieba/post/:id"
-      },
-      {
-        "title": "只看楼主",
-        "docs": "https://docs.rsshub.app/bbs.html#tie-ba",
-        "source": "/p/:id",
-        "target": "/tieba/post/lz/:id"
-      },
-      {
-        "title": "用户帖子",
-        "docs": "https://docs.rsshub.app/bbs.html#tie-ba",
-        "source": "/home/main"
       }
     ]
   },
@@ -14572,35 +17365,6 @@
         "docs": "https://docs.rsshub.app/picture.html#bing-bi-zhi",
         "source": "",
         "target": "/bing"
-      }
-    ]
-  },
-  "dcard.tw": {
-    "_name": "Dcard",
-    "www": [
-      {
-        "title": "首頁帖子-最新",
-        "docs": "https://docs.rsshub.app/bbs.html#dcard",
-        "source": "/f",
-        "target": "/dcard/posts/latest"
-      },
-      {
-        "title": "首頁帖子-熱門",
-        "docs": "https://docs.rsshub.app/bbs.html#dcard",
-        "source": "/f",
-        "target": "/dcard/posts/popular"
-      },
-      {
-        "title": "板塊帖子-最新",
-        "docs": "https://docs.rsshub.app/bbs.html#dcard",
-        "source": "/f/:section",
-        "target": "/dcard/:section/latest"
-      },
-      {
-        "title": "板塊帖子-熱門",
-        "docs": "https://docs.rsshub.app/bbs.html#dcard",
-        "source": "/f/:section",
-        "target": "/dcard/:section/popular"
       }
     ]
   },
@@ -14742,17 +17506,6 @@
       }
     ]
   },
-  "baijingapp.com": {
-    "_name": "白鲸出海",
-    "www": [
-      {
-        "title": "文章",
-        "docs": "https://docs.rsshub.app/new-media.html#bai-jing-chu-hai",
-        "source": "",
-        "target": "/baijing"
-      }
-    ]
-  },
   "xiaomi.cn": {
     "_name": "小米社区",
     "www": [
@@ -14864,37 +17617,6 @@
           "/:name",
           "/:name/:season"
         ]
-      }
-    ]
-  },
-  "qidian.com": {
-    "_name": "起点",
-    "book": [
-      {
-        "title": "章节",
-        "docs": "https://docs.rsshub.app/reading.html#qi-dian",
-        "source": "/info/:id",
-        "target": "/qidian/chapter/:id"
-      },
-      {
-        "title": "讨论区",
-        "docs": "https://docs.rsshub.app/reading.html#qi-dian",
-        "source": "/info/:id",
-        "target": "/qidian/forum/:id"
-      }
-    ],
-    "www": [
-      {
-        "title": "限免",
-        "docs": "https://docs.rsshub.app/reading.html#qi-dian",
-        "source": "/free",
-        "target": "/qidian/free"
-      },
-      {
-        "title": "女生限免",
-        "docs": "https://docs.rsshub.app/reading.html#qi-dian",
-        "source": "/mm/free",
-        "target": "/qidian/free/mm"
       }
     ]
   },
@@ -15089,61 +17811,6 @@
         "docs": "http://docs.rsshub.app/university.html#hu-bei-gong-ye-da-xue",
         "source": "/djhd/djhd.htm",
         "target": "/hbut/cs/djhd"
-      }
-    ]
-  },
-  "zcool.com.cn": {
-    "_name": "站酷",
-    "www": [
-      {
-        "title": "发现",
-        "docs": "https://docs.rsshub.app/design.html#zhan-ku",
-        "source": "",
-        "target": "/zcool/discover"
-      },
-      {
-        "title": "发现 - 精选 - 全部推荐",
-        "docs": "https://docs.rsshub.app/design.html#zhan-ku",
-        "source": "",
-        "target": "/zcool/discover/all"
-      },
-      {
-        "title": "发现 - 精选 - 首页推荐",
-        "docs": "https://docs.rsshub.app/design.html#zhan-ku",
-        "source": "",
-        "target": "/zcool/discover/home"
-      },
-      {
-        "title": "发现 - 精选 - 编辑精选",
-        "docs": "https://docs.rsshub.app/design.html#zhan-ku",
-        "source": "",
-        "target": "/zcool/discover/home"
-      },
-      {
-        "title": "发现 - 精选 - 文章 - 编辑精选",
-        "docs": "https://docs.rsshub.app/design.html#zhan-ku",
-        "source": "",
-        "target": "/zcool/discover/article"
-      },
-      {
-        "title": "作品榜单",
-        "docs": "https://docs.rsshub.app/design.html#zhan-ku",
-        "source": "",
-        "target": "/zcool/top/design"
-      },
-      {
-        "title": "文章榜单",
-        "docs": "https://docs.rsshub.app/design.html#zhan-ku",
-        "source": "",
-        "target": "/zcool/top/article"
-      },
-      {
-        "title": "用户作品",
-        "docs": "https://docs.rsshub.app/design.html#zhan-ku",
-        "source": [
-          "/u/:id"
-        ],
-        "target": "/zcool/user/:id"
       }
     ]
   },
@@ -15511,16 +18178,6 @@
       }
     ]
   },
-  "saraba1st.com": {
-    "_name": "Saraba1st",
-    "bbs": [
-      {
-        "title": "帖子",
-        "docs": "https://docs.rsshub.app/bbs.html#saraba1st",
-        "source": "/2b/:id"
-      }
-    ]
-  },
   "scboy.com": {
     "_name": "scboy 论坛",
     "www": [
@@ -15652,65 +18309,6 @@
         "docs": "https://docs.rsshub.app/social-media.html#fur-affinity",
         "source": "/journal/:id/",
         "target": "/furaffinity/journal_comments/:id"
-      }
-    ]
-  },
-  "bgm.tv": {
-    "_name": "Bangumi",
-    ".": [
-      {
-        "title": "小组话题",
-        "docs": "https://docs.rsshub.app/anime.html#bangumi",
-        "source": "/group/:id",
-        "target": "/bangumi/group/:id"
-      },
-      {
-        "title": "小组话题的新回复",
-        "docs": "https://docs.rsshub.app/anime.html#bangumi",
-        "source": "/group/topic/:id",
-        "target": "/bangumi/topic/:id"
-      },
-      {
-        "title": "现实人物的新作品",
-        "docs": "https://docs.rsshub.app/anime.html#bangumi",
-        "source": "/person/:id",
-        "target": "/bangumi/person/:id"
-      },
-      {
-        "title": "用户日志",
-        "docs": "https://docs.rsshub.app/anime.html#bangumi",
-        "source": "/user/:id",
-        "target": "/bangumi/user/blog/:id"
-      },
-      {
-        "title": "条目的讨论",
-        "docs": "https://docs.rsshub.app/anime.html#bangumi",
-        "source": "/subject/:id",
-        "target": "/bangumi/subject/:id/topics"
-      },
-      {
-        "title": "条目的评论",
-        "docs": "https://docs.rsshub.app/anime.html#bangumi",
-        "source": "/subject/:id",
-        "target": "/bangumi/subject/:id/blogs"
-      },
-      {
-        "title": "条目的章节",
-        "docs": "https://docs.rsshub.app/anime.html#bangumi",
-        "source": "/subject/:id",
-        "target": "/bangumi/subject/:id"
-      },
-      {
-        "title": "条目的吐槽箱",
-        "docs": "https://docs.rsshub.app/anime.html#bangumi",
-        "source": "/subject/:id",
-        "target": "/bangumi/subject/:id/comments"
-      },
-      {
-        "title": "放送列表",
-        "docs": "https://docs.rsshub.app/anime.html#bangumi",
-        "source": "/calendar",
-        "target": "/bangumi/calendar/today"
       }
     ]
   },
