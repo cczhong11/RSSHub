@@ -258,8 +258,8 @@ importers:
         specifier: 4.19.4
         version: 4.19.4
       twitter-api-v2:
-        specifier: 1.22.0
-        version: 1.22.0
+        specifier: 1.27.0
+        version: 1.27.0
       ufo:
         specifier: 1.6.1
         version: 1.6.1
@@ -5179,7 +5179,7 @@ packages:
   puppeteer@22.6.2:
     resolution: {integrity: sha512-3GMAJ9adPUSdIHGuYV1b1RqRB6D2UScjnq779uZsvpAP6HOWw2+9ezZiUZaAXVST+Ku7KWsxOjkctEvRasJClA==}
     engines: {node: '>=18'}
-    deprecated: < 24.9.0 is no longer supported
+    deprecated: < 24.10.2 is no longer supported
     hasBin: true
 
   qs@6.14.0:
@@ -5830,8 +5830,8 @@ packages:
   tweetnacl@0.14.5:
     resolution: {integrity: sha512-KXXFFdAbFXY4geFIwoyNK+f5Z1b7swfXABfL7HXCmoIWMKU3dmS26672A4EeQtDzLKy7SXmfBu51JolvEKwtGA==}
 
-  twitter-api-v2@1.22.0:
-    resolution: {integrity: sha512-KlcRL9vcBzjeS/PwxX33NziP+SHp9n35DOclKtpOmnNes7nNVnK7WG4pKlHfBqGrY5kAz/8J5ERS8DWkYOaiWw==}
+  twitter-api-v2@1.27.0:
+    resolution: {integrity: sha512-hbIFwzg0NeOcFOdmJqtKMCXjLjc0INff/7NwhnZ2zpnw65oku8i+0eMxo5M0iTc1hs+inD/IpDw3S0Xh2c45QQ==}
 
   type-check@0.3.2:
     resolution: {integrity: sha512-ZCmOJdvOWDBYJlzAoFkC+Q0+bUyEOS1ltgp1MGU03fqHG+dbi9tBFU2Rd9QKiDZFAYrhPh2JUf7rZRIuHRKtOg==}
@@ -12315,7 +12315,7 @@ snapshots:
 
   tweetnacl@0.14.5: {}
 
-  twitter-api-v2@1.22.0: {}
+  twitter-api-v2@1.27.0: {}
 
   type-check@0.3.2:
     dependencies:
