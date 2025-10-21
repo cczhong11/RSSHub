@@ -21,8 +21,8 @@ importers:
         specifier: 4.2.0
         version: 4.2.0
       '@bbob/preset-html5':
-        specifier: 4.2.0
-        version: 4.2.0
+        specifier: 4.3.1
+        version: 4.3.1
       '@hono/node-server':
         specifier: 1.14.4
         version: 1.14.4(hono@4.7.11)
@@ -1124,11 +1124,14 @@ packages:
   '@bbob/plugin-helper@4.2.0':
     resolution: {integrity: sha512-Uxs/UJROnkpcq5EJfz/8NCEYAcme8l6oAgMeWLX1nxWeieUhRgpY8BWQ9eQwUOXEKa0tsKVPnlmbUAjFhppVPw==}
 
-  '@bbob/preset-html5@4.2.0':
-    resolution: {integrity: sha512-X2EIeb2vqTz/n34KWQXEL5IC0SuB6i2/ltRpEaMTyK7IoDEs0XGIWcqVpenb7Z2d4eNA3gTWhkoUUkKlZmfQRQ==}
+  '@bbob/plugin-helper@4.3.1':
+    resolution: {integrity: sha512-0gyhW5sU270iCBvaRO1jYDTs1oGHu913yB9tqxPO9zT5OIDhu47PwensdJ7EuZwgYKEyQ4zZZ+1jvDzkubjdyQ==}
 
-  '@bbob/preset@4.2.0':
-    resolution: {integrity: sha512-IA+kxlrRcYBXE634B8W6uU2DO7VvrxeOqWUzIDKV2CgzTMpmCG875ihGp+Q3T+QxGwzG5S0L4GdmCIULTbzC4A==}
+  '@bbob/preset-html5@4.3.1':
+    resolution: {integrity: sha512-6Yn8kOrBWt/2u4ZUt7nSTzWP+xvTaH4TlAds6p+BcBRbs4Ov2f1zkRgCh1JlckMXwhH9q9CGF0wn6w8bkUYcFA==}
+
+  '@bbob/preset@4.3.1':
+    resolution: {integrity: sha512-we6ITgrwciNIdpZRRJl4y3OOEbXEEVA21895JUInvYXevZBrIgIAvO502qlEYQtqhJqQ1HxY5xyhDjZ9rEYQHg==}
 
   '@bbob/types@4.2.0':
     resolution: {integrity: sha512-bSCZnNg0VrPosBBUVkjBDYVKNEqwT0jTNuzvAuNrZkuILgUKtLYI9GHuT8rY4lZecCb7UqGDsHsYt0YJO36eJg==}
@@ -4487,6 +4490,7 @@ packages:
 
   mailsplit@5.4.6:
     resolution: {integrity: sha512-M+cqmzaPG/mEiCDmqQUz8L177JZLZmXAUpq38owtpq2xlXlTSw+kntnxRt2xsxVFFV6+T8Mj/U0l5s7s6e0rNw==}
+    deprecated: This package has been renamed to @zone-eu/mailsplit. Please update your dependencies.
 
   make-dir@4.0.0:
     resolution: {integrity: sha512-hXdUTZYIVOt1Ex//jAQi+wTZZpUpwBj/0QsOzqegb3rGMMeJiSEu5xLHnYfBrRV4RH2+OCSOO95Is/7x1WJ4bw==}
@@ -7185,22 +7189,26 @@ snapshots:
 
   '@bbob/parser@4.2.0':
     dependencies:
-      '@bbob/plugin-helper': 4.2.0
+      '@bbob/plugin-helper': 4.3.1
       '@bbob/types': 4.2.0
 
   '@bbob/plugin-helper@4.2.0':
     dependencies:
       '@bbob/types': 4.2.0
 
-  '@bbob/preset-html5@4.2.0':
+  '@bbob/plugin-helper@4.3.1':
     dependencies:
-      '@bbob/plugin-helper': 4.2.0
-      '@bbob/preset': 4.2.0
       '@bbob/types': 4.2.0
 
-  '@bbob/preset@4.2.0':
+  '@bbob/preset-html5@4.3.1':
     dependencies:
-      '@bbob/plugin-helper': 4.2.0
+      '@bbob/plugin-helper': 4.3.1
+      '@bbob/preset': 4.3.1
+      '@bbob/types': 4.2.0
+
+  '@bbob/preset@4.3.1':
+    dependencies:
+      '@bbob/plugin-helper': 4.3.1
       '@bbob/types': 4.2.0
 
   '@bbob/types@4.2.0': {}
