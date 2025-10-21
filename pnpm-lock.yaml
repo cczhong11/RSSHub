@@ -18,8 +18,8 @@ importers:
   .:
     dependencies:
       '@bbob/html':
-        specifier: 4.2.0
-        version: 4.2.0
+        specifier: 4.3.1
+        version: 4.3.1
       '@bbob/preset-html5':
         specifier: 4.2.0
         version: 4.2.0
@@ -1112,17 +1112,20 @@ packages:
     resolution: {integrity: sha512-bkFqkLhh3pMBUQQkpVgWDWq/lqzc2678eUyDlTBhRqhCHFguYYGM0Efga7tYk4TogG/3x0EEl66/OQ+WGbWB/Q==}
     engines: {node: '>=6.9.0'}
 
-  '@bbob/core@4.2.0':
-    resolution: {integrity: sha512-i5VUIO6xx+TCrBE8plQF9KpW1z+0QcCh9GawCCWYG9KcZrEsyRy57my5/kem0a2lFxXjh0o+tgjQY9sCP5b3bw==}
+  '@bbob/core@4.3.1':
+    resolution: {integrity: sha512-qNS5wNY2oJROV5CQ2e29e9dBz4ZuSO7JcciBXM2yDHvKFUYl+J4o8DxOsugce6z2cFpGz6F4J7vJN7X+6ujWiQ==}
 
-  '@bbob/html@4.2.0':
-    resolution: {integrity: sha512-mZG7MmE/YluH1/FNCr2Jv/Vz3Mq5stZ5tFAjBmYpVVN6Ndus4+FA84vKoHFdUHDiuU1p/e2/o/VUrwsWwLdoIA==}
+  '@bbob/html@4.3.1':
+    resolution: {integrity: sha512-W1qFvBZwhpGkZBNfeRpUFsoF492BlfNmgdh5iczg7B/PDULdOPH5lPLtT/6ZNpyx/xo6/DBssl9YtEO/bm15hw==}
 
-  '@bbob/parser@4.2.0':
-    resolution: {integrity: sha512-l8BppXjdQClrUiv+qIN0Oe6aS/vlH7CEduMreDaxYDadUPC0RMzxj9lXVjO0xTbFEVEIUJCGc53qnpiApLbx2g==}
+  '@bbob/parser@4.3.1':
+    resolution: {integrity: sha512-BqDo8PDLcVLhFvOMdLmeaWk5qqD8E1bEdvzSJQuJC/U1XFs1tMC4lwZ4oPBFmZCeCLNsYFawqjP/S5MDdr7/Tg==}
 
   '@bbob/plugin-helper@4.2.0':
     resolution: {integrity: sha512-Uxs/UJROnkpcq5EJfz/8NCEYAcme8l6oAgMeWLX1nxWeieUhRgpY8BWQ9eQwUOXEKa0tsKVPnlmbUAjFhppVPw==}
+
+  '@bbob/plugin-helper@4.3.1':
+    resolution: {integrity: sha512-0gyhW5sU270iCBvaRO1jYDTs1oGHu913yB9tqxPO9zT5OIDhu47PwensdJ7EuZwgYKEyQ4zZZ+1jvDzkubjdyQ==}
 
   '@bbob/preset-html5@4.2.0':
     resolution: {integrity: sha512-X2EIeb2vqTz/n34KWQXEL5IC0SuB6i2/ltRpEaMTyK7IoDEs0XGIWcqVpenb7Z2d4eNA3gTWhkoUUkKlZmfQRQ==}
@@ -4487,6 +4490,7 @@ packages:
 
   mailsplit@5.4.6:
     resolution: {integrity: sha512-M+cqmzaPG/mEiCDmqQUz8L177JZLZmXAUpq38owtpq2xlXlTSw+kntnxRt2xsxVFFV6+T8Mj/U0l5s7s6e0rNw==}
+    deprecated: This package has been renamed to @zone-eu/mailsplit. Please update your dependencies.
 
   make-dir@4.0.0:
     resolution: {integrity: sha512-hXdUTZYIVOt1Ex//jAQi+wTZZpUpwBj/0QsOzqegb3rGMMeJiSEu5xLHnYfBrRV4RH2+OCSOO95Is/7x1WJ4bw==}
@@ -7171,24 +7175,28 @@ snapshots:
       '@babel/helper-string-parser': 7.27.1
       '@babel/helper-validator-identifier': 7.27.1
 
-  '@bbob/core@4.2.0':
+  '@bbob/core@4.3.1':
     dependencies:
-      '@bbob/parser': 4.2.0
-      '@bbob/plugin-helper': 4.2.0
+      '@bbob/parser': 4.3.1
+      '@bbob/plugin-helper': 4.3.1
       '@bbob/types': 4.2.0
 
-  '@bbob/html@4.2.0':
+  '@bbob/html@4.3.1':
     dependencies:
-      '@bbob/core': 4.2.0
-      '@bbob/plugin-helper': 4.2.0
+      '@bbob/core': 4.3.1
+      '@bbob/plugin-helper': 4.3.1
       '@bbob/types': 4.2.0
 
-  '@bbob/parser@4.2.0':
+  '@bbob/parser@4.3.1':
     dependencies:
-      '@bbob/plugin-helper': 4.2.0
+      '@bbob/plugin-helper': 4.3.1
       '@bbob/types': 4.2.0
 
   '@bbob/plugin-helper@4.2.0':
+    dependencies:
+      '@bbob/types': 4.2.0
+
+  '@bbob/plugin-helper@4.3.1':
     dependencies:
       '@bbob/types': 4.2.0
 
